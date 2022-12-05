@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    color: #E44D26;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ancres {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    
+}
+
+.imghtml {
+    height: 500px;
+    width: 500px;
+}
+
+.main {
+    display: flex;
+}
+
+p {
+    font-size: 25px;
+}
+

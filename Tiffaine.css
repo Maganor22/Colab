@@ -1,0 +1,19 @@
+h1{
+    font-weight: bold;
+    color: lightskyblue;
+    text-shadow: 3px 4px 5px blue;
+    text-align: center;
+    font-size: 300%;
+}
+
+
+
+h2, .hidden{
+    color: white;
+    text-align: center;
+}
+
+h2:hover, .hidden:hover{
+    font-weight: lighter;
+    color: grey;
+}

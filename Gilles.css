@@ -1,0 +1,22 @@
+.logoimg {
+    float: left;
+    height: 500px;
+    width: 500px;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #264de4;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 20px;
+}
+.contenaire {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
