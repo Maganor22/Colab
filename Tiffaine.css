@@ -72,7 +72,7 @@ strong{
 
 #interfaceapp{
     height: 300px;
-    width: 400px;
+    width: 450px;
     display: grid;
 grid-column: 1;
 grid-row: 2;
@@ -130,4 +130,18 @@ iframe{
     height: 280px;
     width: 405px;
     float: none;
+   display: block inline;
+   margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+span.priv{
+    grid-column: 1;
+    grid-row: 1;
 }
