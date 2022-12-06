@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lora&family=Noto+Sans+KR:wght@100&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
 /* NAVBAR */
 
 #imglogo {
@@ -43,9 +50,117 @@ li a:hover {
     background-color: #111;
 }
 
-/* pied de page */
-.mention {
+/* CONTACT */
+.man{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    margin-left: 200px;
+    margin-right: 200px;
+} 
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+fieldset {
+    padding: 20px;
+    border: black 1px solid;
+    border-radius: 5%;
+    width: 500px;
+    margin-left: 5px;
+}
+
+label + p,
+textarea {
+    margin: 10px 0 5px -5px;
+}
+
+textarea {
+    height: 40em;
+    width: 40em;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.Centres {
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    grid-row: 1;
+    grid-column: 2;
+    gap: 12px;
 
 }
+.Centres > div {
+    max-width: fit-content;
+    max-height: 280px;
+    background-color: #ebf4ff;
+    border-radius: 10%;
+}
+
+/* footer */
+footer {
+    border-top: 2px solid black;
+    padding-top: 10px;
+    background-color: #ebf4ff;
+}
+
+.mention {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;   
+}   
+.footerun {
+flex-basis: 15%;
+margin-left: 5%;
+}
+.footerdeux {
+ margin-right: 15%; 
+ position: relative;  
+ left: 13%;
+}
+.footermention {
+    padding: 0 15px 0 15px;
+    text-decoration: underline;
+    color: blue;
+}
+.imgfooter {
+    display: flex;
+    justify-content: center;
+}
+.lienfooter {
+    margin: 10px 20px 5px 20px;
+}
+.lienfooter img {
+    height: 36px;
+    width: 26px;
+}
+
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle at top,  red, black, red, black, red);
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+
+

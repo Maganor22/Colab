@@ -14,7 +14,7 @@
 
   <header>
     <nav>
-      <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="" id="imglogo"></a>
+      <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="logoadrar" id="imglogo"></a>
       <ul>
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="html.html">HTML</a></li>
@@ -24,72 +24,75 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <h1>Découvrir les API</h1>
+
+    <h1>Découvrir les API</h1><br>
     <p class="hidden">Trois lettres qu’on croise souvent sur le web et dont on ne connaît pas forcément le sens!</p><br>
 
     <div class="ancres">
       <a href="#presentation" class="bts">
-          <div class="buttons" id="tbt1">Dénomination</div>
+          <div class="buttons" id="tbt1">Présentation</div>
       </a>
       <a href="#fonctionnement" class="bts">
-          <div class="buttons" id="tbt2">Evolution du langage</div>
+          <div class="buttons" id="tbt2">Fontionnement</div>
       </a>
       <a href="#typesapi" class="bts">
-          <div class="buttons" id="tbt3">Description HTML</div>
+          <div class="buttons" id="tbt3">Types d'API</div>
       </a>
       <a href="#exemples" class="bts">
-          <div class="buttons" id="tbt4">Apprendre en vidéos</div>
+          <div class="buttons" id="tbt4">Exemples</div>
       </a>
-  </div>
+  </div><br>
 
   </header>
 
-
   <main>
-
-    <img src="./imgs/103093.jpg" alt="imageapi" id="engrenage">
+    <div class="images">
+    <img src="./imgs/994152.jpg" alt="imageapi" id="engrenage"><br>
+    <img src="./imgs/What-is-an-API.jpg" alt="imageapi2" id="interfaceapp"></div><br>
     <h2>Présentation</h2><a id="presentation"></a>
-    <h3>Qu'est-ce que l'acronyme API ?</h3>
+    <h3>Qu'est-ce que l'acronyme API ?</h3><br>
     <p>Le terme API est un acronyme qui signifie « Application Programming Interface ».<br>
     <p class="hidden">En français, une API se traduit par Interface de Programmation Applicative ou interface de
-      programmation d'application (IPA donc, mais rien à voir avec la bière artisanale).</p>
-    </p>
+      programmation d'application (IPA donc, mais rien à voir avec la bière artisanale).</p><br>
 
     <h3>Définition d'une API</h3>
     <p>Un ensemble de fonctionnalités et de règles existant dans un logiciel permettant d'intéragir avec celui-ci de
       manière automatisée (plutôt que de passer par une interface utilisateur). L'API peut être vue comme un contrat
-      simple passé entre le logiciel qui la propose et d'autres entités, telles que des logiciels ou matériels tiers. En
+      simple passé entre le logiciel qui la propose et d'autres entités, telles que des logiciels ou matériels tiers. <br> En
       développement web, une API est généralement un ensemble de fonctionnalités (par exemple : méthodes, propriétés,
       évènements et URL) qu'un développeur peut utiliser dans son application pour les interactions avec les composants
       du navigateur de l'utilisateur, ou avec d'autres logiciels/matériels de l'ordinateur de l'utilisateur, ou avec des
       sites web et services tiers.</p><br>
-    <p>Application. Par application s’entend tout service avec lequel un développeur ou une autre application souhaite
-      interagir. Cela peut être un service météorologique, une application de partage d’images, un portail Open Data.
-      Interface. L’interface est la porte d’entrée par laquelle il sera possible d’interagir avec l’application.
-      Programme. Le programme est une fonction informatique à laquelle un développeur donne des instructions et qui va
-      interagir avec l’application à notre place. Le programme peut par exemple récupérer des données à intervalles
-      régulières ou soumettre une adresse postale (pour récupérer une coordonnée géographique)….</p>
+    
+      <p><strong>Application</strong> : Par application s’entend tout service avec lequel un développeur ou une autre application souhaite interagir. Cela peut être un service météorologique, une application de partage d’images, un portail Open Data.</p><br>
+        
+      <p><strong>Interface</strong> : L’interface est la porte d’entrée par laquelle il sera possible d’interagir avec l’application.</p><br>
 
-    <h3>L'histoire des API en quelques mots</h3>
-    <p>Les API sont apparues à l'aube de l'informatique, avant même les ordinateurs personnels. À cette époque, elles
-      étaient surtout utilisées en tant que bibliothèques pour les systèmes d'exploitation. Elles résidaient presque
-      toutes en local sur les systèmes sur lesquels elles s'exécutaient, même si elles transféraient parfois des
-      messages entre les mainframes. Presque 30 ans après, les API sont sorties de leurs environnements locaux. Au début
-      des années 2000, elles sont devenues importantes pour l'intégration des données à distance.</p>
+      <p><strong>Programme</strong> : Le programme est une fonction informatique à laquelle un développeur donne des instructions et qui va interagir avec l’application à notre place. Le programme peut par exemple récupérer des données à intervalles régulières ou soumettre une adresse postale (pour récupérer une coordonnée géographique)….
+     </p><br> 
 
-    <h3>À quoi sert l’API ?</h3>
+     <div class="video">
+      <iframe width="770" height="433" src="https://www.youtube.com/embed/Jc_Riqr58tA" title="C'est quoi une API?"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div><br>
+
+    <h3>À quoi sert l’API ?</h3><br>
     <p>L’API est un rouage central indispensable au fonctionnement et au développement du web et de nombreuses
       applications. Cette technologie agit en tant qu’intermédiaire entre deux systèmes informatiques indépendants afin
       qu’ils puissent échanger et exploiter les fonctionnalités d’une application et le contenu d’une base de données ou
       d’un système de fichiers.</p><br>
 
-    <div class="video">En résumé :
-      <iframe width="770" height="433" src="https://www.youtube.com/embed/Jc_Riqr58tA" title="C'est quoi une API?"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+    <h3>L'histoire des API en quelques mots</h3><br>
+    <p>Les API sont apparues à l'aube de l'informatique, avant même les ordinateurs personnels. À cette époque, elles
+      étaient surtout utilisées en tant que bibliothèques pour les systèmes d'exploitation. Elles résidaient presque
+      toutes en local sur les systèmes sur lesquels elles s'exécutaient, même si elles transféraient parfois des
+      messages entre les mainframes. Presque 30 ans après, les API sont sorties de leurs environnements locaux. Au début
+      des années 2000, elles sont devenues importantes pour l'intégration des données à distance.</p><br>
 
-    <h2>fonctionnement</h2><a id="fonctionnement"></a>
+   
+
+    <h2>Fonctionnement</h2><a id="fonctionnement"></a><br>
     <p>Les API permettent à votre produit ou service de communiquer avec d'autres produits et services sans connaître
       les détails de leur mise en œuvre. Elles simplifient le développement d'applications et vous font ainsi gagner du
       temps et de l'argent. Lorsque vous concevez de nouveaux outils et produits, ou que vous assurez la gestion de ceux
@@ -115,18 +118,21 @@
       essentiellement une question de bonne gestion de celles-ci, ce qui implique l'utilisation d'une passerelle d'API.
       La connexion des API et la création des applications qui utilisent les données ou les fonctionnalités exposées par
       les API peuvent se faire par l'intermédiaire d'une plateforme d'intégration distribuée qui connecte tout, y
-      compris les systèmes existants et l'Internet des objets (IoT).</p>
+      compris les systèmes existants et l'Internet des objets (IoT).</p><br>
 
-    <img src="" alt="">
+    <img src="./imgs/Sans_titre.jpg" alt="image1" class="galerie">
+    <img src="./imgs/2.jpg" alt="image2" class="galerie">
+    <img src="./imgs/API-page-graphic.jpg" alt="image3" class="galerie">
+    <img src="./imgs/1.jpg" alt="image4" class="galerie"><br>
 
-    <h3>Mode d’intervention de l’API </h3>
+    <h3>Mode d’intervention de l’API </h3><br>
     <p>L’interface de programmation d’application autorise l’utilisateur à accéder aux données d’une application à
       distance. Il doit pour cela envoyer une requête au logiciel du fournisseur concerné via l’API. Cette requête,
       envoyée sous la forme d’un langage universel, permet au logiciel de la réceptionner et de l’analyser pour y
       répondre. L’API s’interpose entre l’émetteur de la demande et le fournisseur des contenus, lie et encadre
-      l’exécution d’actions entre les deux parties à la manière d’un contrat d’interface. </p>
+      l’exécution d’actions entre les deux parties à la manière d’un contrat d’interface. </p><br>
 
-    <h3>Des protocoles de communication uniformisés </h3>
+    <h3>Des protocoles de communication uniformisés </h3><br>
     <p>Pour permettre à l’utilisateur de transmettre une requête intelligible et compréhensible à un logiciel doté d’un
       environnement potentiellement différent, les API s’appuient principalement sur deux protocoles de communication
       définis. En effet, l’API doit pouvoir fournir une demande standardisée et compatible aux différentes plateformes
@@ -149,45 +155,45 @@
       serveurs. Il se distingue en offrant un accès plus personnalisé aux utilisateurs. Ils peuvent accéder aux données
       dont ils ont effectivement besoin, en créant des requêtes qui extraient les informations issues de plusieurs
       sources grâce à une unique requête d’API.
-    </p>
+    </p><br>
 
 
-    <h2>Les différents types d’API </h2><a id="typesapi"></a>
+    <h2>Les différents types d’API </h2><a id="typesapi"></a><br>
 
     <p>Les API sont classées à la fois en fonction de leur architecture et de leur champ d'utilisation. Nous avons déjà
-      exploré les principaux types d'architectures d'API, passons donc au champ d'application.</p>
+      exploré les principaux types d'architectures d'API, passons donc au champ d'application.</p><br>
 
-    <div>API privées</div>
+    <div>API privées</div><br>
 
     <p> L'API n'est utilisable qu'en interne. Cette approche permet de garder un contrôle total sur l'API. L’API
       interne, privée ou Private API, accessible uniquement en interne et conçue pour les besoins spécifiques d’une
       entreprise souhaitant en garder le contrôle total. Elles sont internes à une entreprise et ne servent qu'à
-      connecter des systèmes et des données au sein de l'entreprise. </p>
+      connecter des systèmes et des données au sein de l'entreprise. </p><br>
 
-    <div>API partenaires</div>
+    <div>API partenaires</div><br>
 
     <p> L'API est partagée avec certains partenaires de l'entreprise. Cette approche peut générer de nouveaux flux de
       revenus sans compromettre la sécurité. L’API partenaire, qui exige une clé d’identification fournie par un service
       d’authentification et d’autorisation. Elles ne sont accessibles qu'aux développeurs externes autorisés afin de
-      faciliter les partenariats interentreprises. </p>
+      faciliter les partenariats interentreprises. </p><br>
 
-    <div>API publiques</div>
+    <div>API publiques</div><br>
 
     <p> L'API est accessible à tous. Cette approche autorise les tiers à développer des applications qui interagissent
       avec votre API et peut devenir source d'innovations. L’API ouverte ou Open API, accessible publiquement sans
       restriction. Elles sont ouvertes au public et peuvent être utilisées par tous. Il peut y avoir ou non une
-      autorisation et un coût associés à ces types d'API. </p>
+      autorisation et un coût associés à ces types d'API. </p><br>
 
-    <div>API composites </div>
+    <div>API composites </div><br>
 
     <p> Celles combinent deux API différentes ou plus pour faire face aux exigences ou aux comportements complexes du
-      système. </p>
+      système. </p><br>
 
     <p>Une API peut être consultable par tous, sans authentification, on parle alors d’une API publique. C’est notamment
       le cas des API géographiques du gouvernement français. Par exemple, l’API de geo.api.gouv.fr permet d’obtenir
       publiquement des informations sur les communes de France, simplement en consultant une url :
 
-      curl 'https://geo.api.gouv.fr/communes?codePostal=78000'
+      <span> curl 'https://geo.api.gouv.fr/communes?codePostal=78000' </span><br>
 
       Mais une API peut être consultable à condition de s’authentifier, grâce à une clé ou un jeton d’authentification
       (JSON Web Token). Dans ce cas, on parle d’API privée.
@@ -196,7 +202,7 @@
 
       les API SOAP (Simple Object Access Protocol) : cette approche est de moins en moins utilisée,
       les API REST (Representational State Transfert) : il s’agit de l’architecture la plus utilisée aujourd’hui,
-      les API GraphQL, ce nouveau style d’architecture d’API développé par Facebook propose une alternative à REST</p>
+      les API GraphQL, ce nouveau style d’architecture d’API développé par Facebook propose une alternative à REST</p><br>
 
     <p>Pour standardiser l'échange des informations entre les API toujours plus nombreuses, il a fallu développer un
       protocole : le « Simple Object Access Protocol », plus connu sous le nom de SOAP. Les API conçues d'après le
@@ -252,11 +258,11 @@
       Une autre norme d'API est en train d'émerger : GraphQL, un langage de requête et un environnement d'exécution côté
       serveur qui se propose de remplacer l'architecture REST. GraphQL s'attache à fournir aux clients uniquement les
       données qu'ils ont demandées, et rien de plus. Utilisé à la place de REST, GraphQL permet aux développeurs de
-      créer des requêtes qui extraient les données de plusieurs sources à l'aide d'un seul appel d'API.</p>
+      créer des requêtes qui extraient les données de plusieurs sources à l'aide d'un seul appel d'API.</p><br>
 
 
 
-    <h2>Exemples</h2><a id="exemples"></a>
+    <h2>Exemples</h2><a id="exemples"></a><br>
 
     <p> Les APIs sont partout et servent à une foule de choses. Des prévisions météorologiques sur votre smartphone à
       Netflix, tout repose sur des APIs. Ce qui vous permet, ainsi qu’à vos voisins, de regarder votre application météo
@@ -290,9 +296,9 @@
       L'API Twitter peut être utilisée pour récupérer les données d'un compte utilisateur Twitter, par exemple pour
       afficher ses derniers tweets sur une page web.
       L'API Web Animations peut être utilisée pour animer des parties d'une page web, par exemple pour faire bouger ou
-      pivoter des images.</p>
+      pivoter des images.</p><br>
 
-    <h3>Cas concret 1</h3>
+    <h3>Cas concret 1</h3><br>
     <p>Lorsque vous utilisez une application sur votre téléphone portable, l'application se connecte à Internet et
       envoie des données à un serveur. Le serveur récupère ensuite ces données, les interprète, effectue les actions
       nécessaires et renvoie les données à votre téléphone. L'application interprète alors ces données et vous présente
@@ -304,10 +310,10 @@
       communiquer votre commande à la cuisine et de servir votre repas à votre table. C'est à ce moment-là que la
       serveuse ou l'API intervient. La serveuse (l'API) est le messager qui prend votre commande (votre demande) et
       indique à la cuisine (au système) ce qu'il faut faire. Ensuite, la serveuse vous apporte la réponse (en
-      l'occurrence, votre plat).</p>
+      l'occurrence, votre plat).</p><br>
 
 
-    <h3>Cas concret 2</h3>
+    <h3>Cas concret 2</h3><br>
     <p>Imaginez, par exemple, un distributeur de livres. Ce distributeur pourrait fournir à ses librairies clientes une
       application cloud qui leur permettrait de vérifier la disponibilité des livres auprès du fournisseur. Toutefois,
       le développement de cette application risque d'être coûteux et de prendre du temps, alors que l'application finale
@@ -320,21 +326,27 @@
       • Avec une API publique, les développeurs qui travaillent pour le distributeur, pour les librairies ou pour
       d'autres entreprises peuvent développer une application qui aide les clients à trouver les livres qu'ils
       souhaitent acheter. Ainsi, les distributeurs peuvent augmenter leurs ventes ou saisir de nouvelles opportunités
-      commerciales. </p>
-
-
-
-
-
-
-
-
+      commerciales. </p><br>
 
   </main>
 
   <footer>
+    <div class="imgfooter">
+        <a class="lienfooter"href="https://fr-fr.facebook.com" target="_blank"><img src="imgs/fb.svg" alt="logo"></a>
+        <a class="lienfooter" href="https://www.linkedin.com" target="_blank"><img src="imgs/linkedIn.svg" alt="logo"></a>
+        <a class="lienfooter" href="https://twitter.com/?lang=fr" target="_blank"><img src="imgs/twitt.svg" alt="logo"></a>
+        <a class="lienfooter" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="imgs/inta.svg" alt="logo"></a>
+    </div>
+    <div class="mention">
+        <div class="footerun">© 2022 ADRAR Formation</div>
+        <div class="footerdeux">
+            <a class="footermention" href="#">Mentions légales</a>
+            <a class="footermention" href="#">Vie privée</a>
+            <a class="footermention" href="#">Conditions générale de ventes</a>
 
-  </footer>
+        </div>
+    </div>
+      </footer>
 
 </body>
 

@@ -7,10 +7,11 @@
     <title>replit</title>
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="Gilles.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <header>
     <nav>
-        <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="" id="imglogo"></a>
+        <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="logoadrar" id="imglogo"></a>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
             <li><a href="html.html">HTML</a></li>
@@ -23,6 +24,7 @@
   </header>
 
 <body>
+    <main>
     <h1 id="titre1">Découvrir le CSS</h1>
     <div class="contenaire">
         <button class="bt1"><a class="lienb" id="haut" href="#historique">Historique</a></button>
@@ -61,7 +63,7 @@
         seulement descriptif, et se rapproche d'un véritable langage de programmationn. 2. Cette voie est suivie par
         Netscape, qui propose en 1996 au W3C les « JavaScript-Based Style Sheets » (JSSS)8, implémentées par Netscape
         Navigator 4 en 1997. </p>
-    <a href="#titre1" class="retour">Retour en haut</a>
+        <div class="retour"><a class="retoura" href="#titre1">Retour en haut</a></div>
     <h3>-Enjeux et principes</h3>
     <p class="enjeux" id="enjeux">
         Séparation entre la structure et la présentation <br>
@@ -131,7 +133,7 @@
         une feuille de style interne et à des styles appliqués directement à chaque élément qui le compose (styles « en
         ligne »). Une feuille de style peut également importer une ou plusieurs autres feuilles externes.
     </p>
-    <a href="#titre1" class="retour">Retour en haut</a>
+    <div class="retour"><a class="retoura" href="#titre1">Retour en haut</a></div>
     <h3 class="principe" id="principe">-Principes techniques et syntaxe de CSS</h3>
     <p>Le rendu d'un document stylé est déterminé par les concepts de boîte et de flux. Le moteur de rendu CSS établit
         une « structure de formatage » reflétant l'arbre logique du document. Chaque élément de cette structure génère
@@ -168,17 +170,25 @@
         permet, par exemple, de résumer en une seule règle l'ensemble des propriétés de police de caractères, de taille,
         de hauteur de ligne, de casse, de graisse et d'italique. Mais l'utilisation du caractère « / » rend beaucoup
         plus complexe l'analyse syntaxique des feuilles de styles par les agents utilisateurs</p>
-        <a href="#titre1" class="retour">Retour en haut</a>
+        <div class="retour"><a class="retoura" href="#titre1">Retour en haut</a></div>
         <h3 id="exemple">-Exemples</h3>
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/jUzZhHhDQ6A" title="3 Animations CSS simples et efficaces !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <a href="#titre1" class="retour">Retour en haut</a>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/PE8FQ6zihhw?list=PLjwdMgw5TTLVjTZQocrMwKicV5wsZlRpj" title="Découverte du CSS (1/31) : Présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="retour"><a class="retoura" href="#titre1">Retour en haut</a></div>
+    </main>
         <footer>
+            <div class="imgfooter">
+                <a class="lienfooter"href="https://fr-fr.facebook.com" target="_blank"><img src="imgs/fb.svg" alt="logo"></a>
+                <a class="lienfooter" href="https://www.linkedin.com" target="_blank"><img src="imgs/linkedIn.svg" alt="logo"></a>
+                <a class="lienfooter" href="https://twitter.com/?lang=fr" target="_blank"><img src="imgs/twitt.svg" alt="logo"></a>
+                <a class="lienfooter" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="imgs/inta.svg" alt="logo"></a>
+            </div>
             <div class="mention">
-                <div class="footer1">© 2022 ADRAR Formation</div>
-                <div class="footer2">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Vie privée</a>
-                    <a href="#">Conditions générale de ventes</a>
+                <div class="footerun">© 2022 ADRAR Formation</div>
+                <div class="footerdeux">
+                    <a class="footermention" href="#">Mentions légales</a>
+                    <a class="footermention" href="#">Vie privée</a>
+                    <a class="footermention" href="#">Conditions générale de ventes</a>
 
                 </div>
             </div>
