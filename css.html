@@ -8,17 +8,31 @@
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="Gilles.css" rel="stylesheet" type="text/css" />
 </head>
+<header>
+    <nav>
+        <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="" id="imglogo"></a>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
 
 <body>
-    <h1>Découvrir le CSS</h1>
+    <h1 id="titre1">Découvrir le CSS</h1>
     <div class="contenaire">
-    <button><a id="haut" href="#historique">Historique</a></button>
-    <button><a href="enjeux">Enjeux et principes</a></button>
-    <button><a href="#">Principes techniques et syntaxe de CSS</a></button>
-    <button><a href="#">Exemples</a></button>
-</div>   
+        <button class="bt1"><a class="lienb" id="haut" href="#historique">Historique</a></button>
+        <button class="bt2"><a class="lienb" href="#enjeux">Enjeux et principes</a></button>
+        <button class="bt3"><a class="lienb" href="#principe">Principes techniques et syntaxe de CSS</a></button>
+        <button class="bt4"><a class="lienb" href="#exemple">Exemples</a></button>
+    </div>
     <img class="logoimg" src="imgs/css.svg" alt="logo">
     <h2>Les feuilles de style en cascade :</h2>
+    <h3>-Historique</h3>
     <p class="historique" id="historique">Le concept de feuille de style est présent dès l'origine du World Wide Web :
         le premier navigateur web
         WorldWideWeb permet de mettre en forme les documents à l'aide de ce qui serait aujourd'hui considéré comme une
@@ -47,7 +61,8 @@
         seulement descriptif, et se rapproche d'un véritable langage de programmationn. 2. Cette voie est suivie par
         Netscape, qui propose en 1996 au W3C les « JavaScript-Based Style Sheets » (JSSS)8, implémentées par Netscape
         Navigator 4 en 1997. </p>
-    <a href="#haut">Retour en haut</a>
+    <a href="#titre1" class="retour">Retour en haut</a>
+    <h3>-Enjeux et principes</h3>
     <p class="enjeux" id="enjeux">
         Séparation entre la structure et la présentation <br>
 
@@ -71,9 +86,8 @@
         Le code HTML est considérablement réduit en taille et en complexité, puisqu'il ne contient plus de balises ni
         d'attributs de présentation. <br>
 
-        Présentation selon le média <br>
 
-        CSS permet de définir le rendu d'un document en fonction du média de restitution et de ses capacités (type de
+        Le CSS permet de définir le rendu d'un document en fonction du média de restitution et de ses capacités (type de
         moniteur ou de dispositif vocal), de celles du navigateur (texte ou graphique), ainsi que des préférences de son
         utilisateur. <br>
 
@@ -93,12 +107,13 @@
         les téléscripteurs. <br>
 
         Dans chaque média, les styles de présentation déterminés par l'auteur du document se combinent avec ceux par
-        défaut de l'agent utilisateur et ceux issus des préférences de l'utilisateur et de sa configuration personnelle. <br>
+        défaut de l'agent utilisateur et ceux issus des préférences de l'utilisateur et de sa configuration personnelle.
+        <br>
 
         Les capacités du récepteur peuvent être prises en compte par les auteurs, à destination des agents utilisateurs
         implémentant le module CSS3 « media queries »34 : celui-ci permet de conditionner la prise en compte d'une
         feuille de style à des contraintes concernant notamment la résolution ou la capacité de restitution des
-        couleurs. <br> 
+        couleurs. <br>
         Cascade des styles <br>
 
         La « cascade » est la combinaison de différentes sources de styles appliqués à un même document, selon leur
@@ -116,6 +131,60 @@
         une feuille de style interne et à des styles appliqués directement à chaque élément qui le compose (styles « en
         ligne »). Une feuille de style peut également importer une ou plusieurs autres feuilles externes.
     </p>
+    <a href="#titre1" class="retour">Retour en haut</a>
+    <h3 class="principe" id="principe">-Principes techniques et syntaxe de CSS</h3>
+    <p>Le rendu d'un document stylé est déterminé par les concepts de boîte et de flux. Le moteur de rendu CSS établit
+        une « structure de formatage » reflétant l'arbre logique du document. Chaque élément de cette structure génère
+        une ou plusieurs zones dotées de propriétés d'affichage ou de rendu vocal paramétrables. L'affichage ou la
+        lecture s'effectuent à partir du flux des boîtes successivement générées pour chaque élément tel qu'il apparaît
+        dans l'ordre linéaire de la structure de formatage. <br>
+
+        Selon les cas de figures, ces différents types de boîtes : <br>
+
+        peuvent avoir des propriétés de marges, de bordure, d'arrière-plan, de largeur ou de hauteur, etc. Dans un rendu
+        vocal, des propriétés équivalentes permettent de déterminer des pauses dans la lecture avant ou après le
+        contenu, de choisir une voix, de régler son débit ou son niveau sonore ;
+        peuvent être déplacées par rapport à leur position par défaut dans le flux, ou avoir un comportement particulier
+        dans celui-ci (permettre un rendu en colonnes adjacentes, se superposer aux boîtes voisines, ou être masquées
+        par exemple). <br>
+
+        Propriétés et valeurs <br>
+
+        Les caractéristiques applicables aux boîtes CSS sont exprimées sous forme de couples propriété: valeur. <br>
+
+        Les propriétés sont libellées à l'aide de mots-outils anglais tels que « width » (largeur), « font-size »
+        (taille de la police de caractères) ou « voice-volume » (volume sonore du rendu vocal). <br>
+
+        Les valeurs peuvent être selon les cas exprimées à l'aide d'unités normalisées par ailleurs, ou de mots-clés
+        propres à CSS. Par exemple, une couleur de fond ou de texte peut être exprimée à l'aide du modèle RGB ou des
+        mots clés black, blue, fuchsia, etc. <br>
+
+        Les propriétés CSS ont été établies selon un compromis entre deux contraintes opposées : faciliter la lecture
+        des feuilles de styles par les agents utilisateurs en multipliant les propriétés individuelles, ou faciliter
+        leur écriture par les auteurs en recourant à un nombre plus réduit de propriétés combinées. Par exemple, la
+        position d'une image d'arrière-plan est déterminée par une propriété unique (background-position), combinant les
+        deux valeurs d'abscisse et d'ordonnée, et non par deux propriétés distinctes. De même, il existe des propriétés
+        raccourcies permettant aux auteurs de simplifier l'écriture d'une série de propriétés : le raccourci font
+        permet, par exemple, de résumer en une seule règle l'ensemble des propriétés de police de caractères, de taille,
+        de hauteur de ligne, de casse, de graisse et d'italique. Mais l'utilisation du caractère « / » rend beaucoup
+        plus complexe l'analyse syntaxique des feuilles de styles par les agents utilisateurs</p>
+        <a href="#titre1" class="retour">Retour en haut</a>
+        <h3 id="exemple">-Exemples</h3>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/jUzZhHhDQ6A" title="3 Animations CSS simples et efficaces !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="#titre1" class="retour">Retour en haut</a>
+        <footer>
+            <div class="mention">
+                <div class="footer1">© 2022 ADRAR Formation</div>
+                <div class="footer2">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Vie privée</a>
+                    <a href="#">Conditions générale de ventes</a>
+
+                </div>
+            </div>
+              </footer>
+
+
 
 
 

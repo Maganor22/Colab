@@ -1,27 +1,96 @@
 h1 {
     text-align: center;
     color: #E44D26;
-    font-size: 30px;
+    font-size: 35px;
+}
+
+h2 {
+    color: #E44D26;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
     font-weight: bold;
+    text-decoration: underline;
+    margin: 20px 0 10px 10px;
 }
 
 .ancres {
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
-    
 }
 
 .imghtml {
+    float: left;
     height: 500px;
     width: 500px;
 }
 
-.main {
-    display: flex;
+p {
+    font-size: 16px;
+    padding-left: 15px;
 }
 
-p {
-    font-size: 25px;
+.buttons{
+    border: 2px black solid;
+    width: 180px;
+    height: 50px;
+    background-image: radial-gradient(circle at center, rgba(217, 255, 0, 0.068), #E44D26);
+    border-radius: 5px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:50px;
 }
+
+.bts {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+
+@keyframes rotation {
+    from{
+        transform:rotate(0);
+    }
+    50% {
+        transform:rotate(2deg);
+    }
+    to {
+        transform:rotate(-2deg);
+    }
+}
+.bts:hover {
+    animation: rotation
+    0.2s 
+    ease-in-out 
+    0s 
+    infinite 
+    alternate;
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#vid {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.backToUp {
+    display: flex;
+    justify-content: right;
+}
+
+
 

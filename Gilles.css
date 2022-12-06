@@ -2,17 +2,46 @@
     float: left;
     height: 500px;
     width: 500px;
+    margin-bottom: 15px;
 }
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     color: #264de4;
+    text-decoration: underline;
+    font-weight: bold;
+    
+    
 }
+button {
+    height: 50px;
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: radial-gradient(circle at center, rgba(217, 255, 0, 0.116), #264de4);
+    font-size: 15px;
+}
+
+ a  {
+    text-decoration: none;
+    color: black;
+
+}
+
 h2 {
     font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 p {
-    font-size: 20px;
+    font-size: 16px;
+    margin:10px 10px 10px 10px ;
 }
 .contenaire {
     display: flex;
@@ -20,3 +49,90 @@ p {
     margin-bottom: 50px;
     margin-top: 50px;
 }
+.retour {
+   color: #264de4;
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 30px;
+   
+}
+iframe {
+    width: 400px;
+    height: auto;
+    border: 2px solid #264de4;
+    margin-bottom: 30px;
+}
+@keyframes rotation {
+    from{
+        transform:rotate(0);
+    }
+    50% {
+        transform:rotate(10deg);
+    }
+    to {
+        transform:rotate(-10deg);
+    }
+}
+button:hover {
+    animation: rotation
+     0.2s 
+     linear 
+     0s 
+     infinite 
+     alternate;
+}
+
+/* NAVBAR */
+
+#imglogo {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 60px;
+    top: 2px;
+    left: 5px;
+    z-index: 1;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content:space-evenly;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+/* footer */
+.mention {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+.footer1 {
+flex-basis: 10%;
+}
+
