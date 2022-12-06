@@ -141,7 +141,22 @@ iframe{
 
 }
 
-span.priv{
+.type1{
     grid-column: 1;
     grid-row: 1;
+}
+
+.type2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.type3{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.type4{
+    grid-column: 2;
+    grid-row: 2;
 }
