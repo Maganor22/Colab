@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <title>Accueil</title>
   <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
@@ -27,29 +27,28 @@
 
 
   <main>
-    <section class="carousel" aria-label="Gallery">
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper">
-            <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-          </div>
-        </li>
-        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
-        </li>
-      </ol>
-    </section>
+    <div class="slider-container">
+      <div class="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+      </div>
+
+      <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+      <img class="slide-img" src="./imgs/propal_slider_HQ.jpeg">
+
+      <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+      <img class="slide-img" src="./imgs/propal_slider2_HQ.jpeg">
+
+      <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+      <img class="slide-img" src="./imgs/propal_slider3_HQ.jpg">
+
+    </div>
+
     <!-- <img class="img_acceuil" src="./imgs/propal_slider3_HQ.jpg" alt="fond colorer"> -->
-    <h1>Découvrez nos formations</h1>
+    <h1 class="titrep">Découvrez nos formations</h1>
     <h3>Par profil</h3>
+    <!-- BOUTONS GRIS -->
     <div class="links profile">
       <a href="#alernant" class="bts">
         <div class="item-prolile"><span>Alternant</span></div>
@@ -99,10 +98,13 @@
     </div>
     <div class="containergrilles">
       <div class="grid-item box1">
+
         <h3>Les formations en alternance</h3>
         <p>Des entrées en alternance tout au long de l’année. L’ADRAR vous aide dans votre recherche d’entreprise et
           vous accompagne tout au long de votre parcours en alternance.</p>
-          <a href="#">Découvrir les formations</a>
+        <a href="#">Découvrir les formations</a>
+
+
       </div>
       <div class="grid-item box2">
         <h3>Bilan de compétences</h3>
@@ -124,7 +126,7 @@
         <p>Suivant l’objectif de votre projet professionnel (développer vos compétences, acquérir des savoirs de bases,
           changer de métier…), de nombreux dispositifs existent et sont accessibles gratuitement aux demandeurs
           d’emplois.</p>
-          <a href="#">Découvrir les formations</a>
+        <a href="#">Découvrir les formations</a>
       </div>
     </div>
   </main>

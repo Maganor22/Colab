@@ -25,7 +25,8 @@ h1, h2, h3{
 .ancres{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 50px 50px 50px;
+    margin: 30px 60px 50px 50px;
+    background-color: white;
 }
 
 .buttons{
@@ -42,7 +43,7 @@ h1, h2, h3{
 .bts{
     text-decoration: none;
     font-size: 20px;
-    color: brown;
+    color: black;
 }
 
 @keyframes buttanimation{
@@ -65,6 +66,11 @@ h1, h2, h3{
 /* Contenu de la page */
 main{
     margin: 0 10% 0 10%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid greenyellow;
+    box-shadow: inset;
 }
 
 p{
@@ -104,8 +110,8 @@ strong{
     width: 250px;
     margin: 100px 100px 100px 100px;
     display: grid;
-grid-column: 1;
-grid-row: 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 #engrenage:hover{
@@ -129,9 +135,9 @@ grid-row: 1;
     height: 300px;
     width: 450px;
     display: grid;
-grid-column: 1;
-grid-row: 2;
-animation: img2animation 3s;
+    grid-column: 1;
+    grid-row: 2;
+    animation: img2animation 3s;
 }
 /*--------------------------------------------------------------------*/
 
@@ -140,8 +146,8 @@ animation: img2animation 3s;
     height: 200px;
     width: 350px;
     float: none;
-   display: block inline;
-   margin: 10px;
+    display: block inline;
+    margin: 10px;
 }
 .galerie:active{
     transform: scale(2);
@@ -205,14 +211,43 @@ th{
 /*--------------------------------------------------------------------*/
 
 
-#divA p:nth-child(2){
+span p{
     color: lightsalmon;
-    text-shadow: 2px 2px 2px red;
+    text-shadow: 1px 1px 2px red;
     font-weight: bold;
     text-align: center;
-    margin: 0px 420px 0px 420px;
-    padding: 10px;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 50px 0px 50px;
+    padding: 5px;
     border-width: 1px;
     border: solid 1px black;
     border-style: inset;
+}
+
+input{
+    background-image: linear-gradient(blue, purple, yellow, orange, pink, gray, red, green) ;
+    color: black solid 2px;
+    margin: 20px;
+}
+
+#bouthaut{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+main p:last-child{
+    color: gray;
+    font-weight: bold;
+}
+
+header{
+background-color: white;
+margin-bottom: 20px;
 }

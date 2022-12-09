@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API</title>
   <link href="reset.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="Tiffaine.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -25,7 +25,9 @@
       </ul>
     </nav>
 
-    <h1>Découvrir les API</h1><a id="haut"></a>
+
+    <a id="haut"></a>
+    <h1>Découvrir les API</h1>
     <p class="hidden">Trois lettres qu’on croise souvent sur le web et dont on ne connaît pas forcément le sens!</p>
 
     <div class="ancres">
@@ -47,7 +49,7 @@
 
   <main>
     <div class="images">
-      <img src="./imgs/994152.jpg" alt="imageapi" id="engrenage"><br>
+      <img src="./imgs/994152.png" alt="imageapi" id="engrenage"><br>
       <img src="./imgs/What-is-an-API.jpg" alt="imageapi2" id="interfaceapp">
     </div>
     <h2>Présentation</h2><a id="presentation"></a>
@@ -104,8 +106,9 @@
       documentation qui constitue un accord entre les parties : si la partie 1 envoie une requête à distance selon une
       structure particulière, le logiciel de la partie 2 devra répondre selon les conditions définies. Parce que les API
       simplifient la façon dont les développeurs intègrent de nouveaux composants d'applications dans une architecture
-      existante, elles facilitent la collaboration entre les équipes informatiques et métier. Souvent, les besoins des
-      entreprises changent rapidement face à l'évolution constante des marchés numériques, où de nouveaux concurrents
+      existante, elles facilitent la collaboration entre les équipes informatiques et métier.</p>
+    <p>Souvent, les besoins des entreprises changent rapidement face à l'évolution constante des marchés numériques, où
+      de nouveaux concurrents
       peuvent bouleverser tout un secteur avec une nouvelle application. Afin de conserver leur compétitivité, il est
       important pour ces entreprises de soutenir le développement et le déploiement rapides de services novateurs. Le
       développement d'applications cloud-native est un moyen évident d'augmenter la vitesse de développement. Il repose
@@ -122,6 +125,7 @@
       La connexion des API et la création des applications qui utilisent les données ou les fonctionnalités exposées par
       les API peuvent se faire par l'intermédiaire d'une plateforme d'intégration distribuée qui connecte tout, y
       compris les systèmes existants et l'Internet des objets (IoT).</p>
+
 
     <img src="./imgs/Sans_titre.jpg" alt="image1" class="galerie">
     <img src="./imgs/2.jpg" alt="image2" class="galerie">
@@ -185,22 +189,15 @@
       </tr>
     </table>
 
-    <div id="divA">
-      <p>Une API peut être consultable par tous, sans authentification, on parle alors d’une API publique. C’est
-        notamment
-        le cas des API géographiques du gouvernement français. Par exemple, l’API de geo.api.gouv.fr permet d’obtenir
-        publiquement des informations sur les communes de France, simplement en consultant une url :</p>
-      <p>curl 'https://geo.api.gouv.fr/communes?codePostal=78000' </p>
-      <p>Mais une API peut être consultable à condition de s’authentifier, grâce à une clé ou un jeton
-        d’authentification
-        (JSON Web Token). Dans ce cas, on parle d’API privée. Enfin, les API peuvent se différencier par leurs approches
-        :
-        les API SOAP (Simple Object Access Protocol) : cette approche est de moins en moins utilisée, les API REST
-        (Representational State Transfert) : il s’agit de l’architecture la plus utilisée aujourd’hui, les API GraphQL,
-        ce
-        nouveau style d’architecture d’API développé par Facebook propose une alternative à REST.</p>
-    </div>
-
+    <p>Une API peut être consultable par tous, sans authentification, on parle alors d’une API publique. C’est
+      notamment
+      le cas des API géographiques du gouvernement français. Par exemple, l’API de geo.api.gouv.fr permet d’obtenir
+      publiquement des informations sur les communes de France, simplement en consultant une url : <span>curl
+        'https://geo.api.gouv.fr/communes?codePostal=78000'</span> Mais une API peut être consultable à condition de
+      s’authentifier, grâce à une clé ou un jeton d’authentification (JSON Web Token). Dans ce cas, on parle d’API privée. Enfin, les API peuvent se différencier
+      par leurs approches : les API SOAP (Simple Object Access Protocol) : cette approche est de moins en moins utilisée, les API REST
+      (Representational State Transfert) : il s’agit de l’architecture la plus utilisée aujourd’hui, les API GraphQL,
+      ce nouveau style d’architecture d’API développé par Facebook propose une alternative à REST.</p>
 
     <p>Pour standardiser l'échange des informations entre les API toujours plus nombreuses, il a fallu développer un
       protocole : le « Simple Object Access Protocol », plus connu sous le nom de SOAP. Les API conçues d'après le
@@ -321,7 +318,11 @@
       clients à trouver les livres qu'ils souhaitent acheter. Ainsi, les distributeurs peuvent augmenter leurs ventes ou
       saisir de nouvelles opportunités commerciales. </p>
 
-      <input type="submit" value="Retour en haut" href="#haut">
+    <div id="bouthaut"><a href="#haut"><input type="submit" value="Retour en haut"></a></div>
+
+    <p>En bonus, voici un lien intéressant, <em>cliquez dessus</em>: <a
+        href="https://developer.mozilla.org/fr/docs/Web/API/Web_Animations_API" target="_blank"><img
+          src="./imgs/MDN_Web_Docs_logo.svg.png" alt="imagelien"></a></p>
 
   </main>
 
