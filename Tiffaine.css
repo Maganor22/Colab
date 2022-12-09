@@ -1,3 +1,4 @@
+/* Titres */
 h1{
     text-align: center;
     color: green;
@@ -9,37 +10,19 @@ h2{
     font-size: 25px;
 }
 
-h3 {
+h3{
     font-size: 20px;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
     font-weight: bold;
     text-decoration: underline;
     margin: 20px 0 10px 10px;
 }
+/*--------------------------------------------------------------------*/
 
-p {
-    font-size: 16px;
-    padding-left: 15px;
-}
-
-strong{
-    font-weight: bolder;
-}
-
-.hidden{
-    color: white;
-    text-align: center;
-    font-size: 15px;
-}
-
-.hidden:hover{
-    font-weight: lighter;
-    color: grey;
-}
-
-.ancres {
+/* Menu de la page */
+.ancres{
     display: flex;
     justify-content: space-evenly;
     margin: 20px 50px 50px 50px;
@@ -56,59 +39,11 @@ strong{
     line-height:50px;
 }
 
-.bts {
+.bts{
     text-decoration: none;
     font-size: 20px;
     color: brown;
 }
-
-.images{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    float: left;
-    align-items: center;
-}
-
-#interfaceapp{
-    height: 300px;
-    width: 450px;
-    display: grid;
-grid-column: 1;
-grid-row: 2;
-}
-
-#engrenage{
-    height: 250px;
-    width: 250px;
-    margin: 100px 100px 100px 100px;
-    display: grid;
-grid-column: 1;
-grid-row: 1;
-}
-
-#engrenage:hover{
-    transition: 10s ease-in-out;
-    transform: rotate(2160deg);
-}
-
-iframe{
-    height: 400px;
-    width: 500px;
-}
-
-.video{
-    border: double 6px grey;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    padding: 10px 10px 10px 10px;
-    background-color: rgb(121, 169, 231);
-    height: 400px;
-    width: 550px;
-    margin: auto;
-}
-
 
 @keyframes buttanimation{
     0%{
@@ -125,38 +60,159 @@ iframe{
 .buttons:hover{
     animation: buttanimation 1s infinite alternate;
 }
+/*--------------------------------------------------------------------*/
 
+/* Contenu de la page */
+main{
+    margin: 0 10% 0 10%;
+}
+
+p{
+    font-size: 16px;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.hidden{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hidden:hover{
+    font-weight: lighter;
+    color: grey;
+}
+/*--------------------------------------------------------------------*/
+
+/* Images du haut de la partie présentation */
+.images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    float: left;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+#engrenage{
+    height: 250px;
+    width: 250px;
+    margin: 100px 100px 100px 100px;
+    display: grid;
+grid-column: 1;
+grid-row: 1;
+}
+
+#engrenage:hover{
+    transition: 10s ease-in-out;
+    transform: rotate(2160deg);
+}
+
+@keyframes img2animation{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#interfaceapp{
+    height: 300px;
+    width: 450px;
+    display: grid;
+grid-column: 1;
+grid-row: 2;
+animation: img2animation 3s;
+}
+/*--------------------------------------------------------------------*/
+
+/* Images du bas de la partie sur le fonctionnement */
 .galerie{
-    height: 280px;
-    width: 405px;
+    height: 200px;
+    width: 350px;
     float: none;
    display: block inline;
-   margin: auto;
+   margin: 10px;
+}
+.galerie:active{
+    transform: scale(2);
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+/*--------------------------------------------------------------------*/
 
+/* Vidéo (+contour) de la partie présentation */
+iframe{
+    height: 350px;
+    width: 500px;
 }
 
-.type1{
-    grid-column: 1;
-    grid-row: 1;
+#video{
+    border: double 6px grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(121, 169, 231);
+    height: 380px;
+    width: 550px;
+    margin: auto;
+}
+/*--------------------------------------------------------------------*/
+
+/* Liste dans la partie sur les types d'API */
+.mylist{
+    list-style-type: circle;
+    margin-left:50px;
+    margin-bottom: 10px;
+}
+/*--------------------------------------------------------------------*/
+
+/* Tableaux des types d'API */
+table{
+    display: flex;
+    justify-content: center;
 }
 
-.type2{
-    grid-column: 2;
-    grid-row: 1;
+td{
+    color: white;
+    background-color: none;
+    table-layout: auto;
+    width: 400px;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
 }
 
-.type3{
-    grid-column: 1;
-    grid-row: 2;
+td:active{
+    border: solid lightgreen 2px;
+    background-color: green;
 }
 
-.type4{
-    grid-column: 2;
-    grid-row: 2;
+th{
+    color: lightcoral;
+    font-weight: bolder;
+}
+/*--------------------------------------------------------------------*/
+
+
+#divA p:nth-child(2){
+    color: lightsalmon;
+    text-shadow: 2px 2px 2px red;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 420px 0px 420px;
+    padding: 10px;
+    border-width: 1px;
+    border: solid 1px black;
+    border-style: inset;
 }

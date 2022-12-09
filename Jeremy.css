@@ -62,7 +62,9 @@ p {
 .bts {
     text-decoration: none;
     font-size: 17px;
+    color: black;
 }
+
 
 .ancres a:visited {
     color: black;
@@ -89,13 +91,12 @@ p {
 .videos{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 #vid {
     margin-top: 50px;
     text-align: center;
-
 }
 
 .backToUp {
