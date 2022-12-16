@@ -3,6 +3,7 @@ h1{
     text-align: center;
     color: green;
     font-size: 35px;
+    background-color: lightseagreen;
 }
 
 h2{
@@ -22,11 +23,11 @@ h1, h2, h3{
 /*--------------------------------------------------------------------*/
 
 /* Menu de la page */
-.ancres{
+.ancresbout{
     display: flex;
     justify-content: space-evenly;
-    margin: 30px 60px 50px 50px;
-    background-color: white;
+    margin: 20px 50px 50px 50px;
+    background-color: lightseagreen;
 }
 
 .buttons{
@@ -64,14 +65,23 @@ h1, h2, h3{
 /*--------------------------------------------------------------------*/
 
 /* Contenu de la page */
+body{
+    background-color: lightseagreen;
+}
+
 main{
     margin: 0 10% 0 10%;
     background-color: white;
     padding: 10px;
     border-radius: 15px;
-    border: 2px solid greenyellow;
+    border: 2px solid lightgreen;
     box-shadow: inset;
 }
+
+header{
+    background-color: lightseagreen;
+    margin-bottom: 20px;
+    }
 
 p{
     font-size: 16px;
@@ -83,7 +93,13 @@ strong{
     font-weight: bolder;
 }
 
-.hidden{
+header:first-child{
+    color: lightseagreen;
+    text-align: center;
+    font-size: 15px;
+}
+
+main p:nth-child(6){
     color: white;
     text-align: center;
     font-size: 15px;
@@ -92,6 +108,27 @@ strong{
 .hidden:hover{
     font-weight: lighter;
     color: grey;
+}
+
+span p{
+    color: lightsalmon;
+    text-shadow: 1px 1px 2px red;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 50px 0px 50px;
+    padding: 5px;
+    border-width: 1px;
+    border: solid 1px black;
+    border-style: inset;
+}
+
+main p:last-child{
+    color: gray;
+    font-weight: bold;
 }
 /*--------------------------------------------------------------------*/
 
@@ -158,7 +195,7 @@ strong{
 /* Vidéo (+contour) de la partie présentation */
 iframe{
     height: 350px;
-    width: 500px;
+    width: 450px;
 }
 
 #video{
@@ -166,10 +203,10 @@ iframe{
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     background-color: rgb(121, 169, 231);
-    height: 380px;
-    width: 550px;
+    height: auto;
+    width: auto;
     margin: auto;
 }
 /*--------------------------------------------------------------------*/
@@ -210,23 +247,7 @@ th{
 }
 /*--------------------------------------------------------------------*/
 
-
-span p{
-    color: lightsalmon;
-    text-shadow: 1px 1px 2px red;
-    font-weight: bold;
-    text-align: center;
-    overflow-wrap: break-word;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0px 50px 0px 50px;
-    padding: 5px;
-    border-width: 1px;
-    border: solid 1px black;
-    border-style: inset;
-}
-
+/* Bouton retour */
 input{
     background-image: linear-gradient(blue, purple, yellow, orange, pink, gray, red, green) ;
     color: black solid 2px;
@@ -237,17 +258,42 @@ input{
     display: flex;
     justify-content: center;
 }
+/*--------------------------------------------------------------------*/
 
-body{
-    background-color: aquamarine;
+/* Responsive */
+
+@media screen and (orientation:portrait){
+    .ancresbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        margin: auto;
+        background-color: lightseagreen;
+    }
 }
 
-main p:last-child{
-    color: gray;
-    font-weight: bold;
+
+@media only screen and (max-width: 767px){
+    
+    .bts{
+        text-decoration: none;
+        font-size: 10px;
+        color: black;
+    }
 }
 
-header{
-background-color: white;
-margin-bottom: 20px;
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .ancresbout{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: lightseagreen;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px)/* LAPTOP */{
+
 }

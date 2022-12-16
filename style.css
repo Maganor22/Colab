@@ -461,31 +461,58 @@ body::-webkit-scrollbar-thumb {
         height: 40px;
         width: 30px;
     }
+
     footer {
         width: 243vw;
     }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     #imglogo {
         height: 40px;
         width: 30px;
     }
-    ul {
-        justify-content: center;
+
+    #up,
+    .ancres {
+        margin-left: 200px;
     }
-    ul li {
+
+    ul:not(.nav) li:not(.nav) {
         margin-left: 50px;
     }
+
+    .nav {
+        justify-content:center;
+    }
+    
+    .nav li {
+        margin: 0 30px 0 30px;
+    }
+
+    .allvids {
+        margin-left: 145px;
+    }
+
     footer {
         width: 131vw;
+    }
+
+    .footerdeux {
+        margin-right: 25%
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) { /* LAPTOP */
-    ul li {
+/*     .allvids {
+        margin-left: 200px;
+    } */
+
+
+    ul:not(.nav) li {
         margin-left: 50px;
     }
+
     footer {
         width: 110.3vw;
     }

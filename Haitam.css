@@ -161,3 +161,93 @@ strong {
     animation: Anim 0.1s linear infinite alternate ;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #imglogo {
+        height: 40px;
+        width: 30px;
+    }
+    footer {
+        width: 243vw;
+    }
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+        background-image: none;
+    }
+    .JSHistoire {
+        margin-bottom: 75px;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #logo1 {
+        float: left;
+        grid-row: 1;
+    }
+    .fond{
+        height: 100vh;
+        width: 100vw;
+        background-color: none;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-radius:10px ;
+        box-shadow: rgb(255, 255, 255) 0px 30px 60px -12px inset, rgb(255, 255, 255) 0px 18px 36px -18px inset;
+    }
+    p{
+        text-align: justify;
+        grid-row: 2;
+    }
+    .Vids {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    
+    }
+    
+    .Vids > iframe {
+        height: fit-content;
+        width: fit-content;
+    }
+    #vid2,
+    #vid3 {
+        margin-top: 15px;
+    }
+    .buttons{
+        border: 1px black solid;
+        width: 75px;
+        height: 35px;
+        background-image: radial-gradient(circle at center, rgba(243, 240, 52, 0.068), rgb(206, 187, 20));
+        border-radius: 5px;
+        text-align:center;
+        vertical-align:middle;
+        line-height:50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #imglogo {
+        height: 40px;
+        width: 30px;
+    }
+    ul {
+        justify-content: center;
+    }
+    ul li {
+        margin-left: 50px;
+    }
+    footer {
+        width: 131vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) { /* LAPTOP */
+    ul li {
+        margin-left: 50px;
+    }
+    footer {
+        width: 110.3vw;
+    }
+}
+
+
+/* FIN RESPONSIVE */
