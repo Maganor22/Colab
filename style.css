@@ -177,6 +177,7 @@ textarea {
 .links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
@@ -186,7 +187,7 @@ textarea {
     border-radius: 5px;
     text-align: center;
     line-height: 25px;
-    margin: 0 30px 0 30px;
+    margin: 0 30px 6px 30px;
     color: black;
     font-weight: bold;
     padding-left: 10px;
@@ -240,10 +241,13 @@ textarea {
     border-radius: 5px;
     text-align:center;
     line-height:50px;
-    margin: 0 30px 0 30px; 
+    margin: 0 30px 6px 30px; 
     font-weight: bold;
+    box-sizing: border-box;
 }
-
+.item-prolile:hover {
+    border: 1px black solid;
+}
 .item-prolile span {
     vertical-align: middle;
     display: table-cell;
