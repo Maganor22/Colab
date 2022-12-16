@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>Accueil</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="logoadrar" id="imglogo"></a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="api.html">API</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="slider-container">
+      <div class="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+      </div>
+
+      <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+      <img class="slide-img" src="./imgs/propal_slider_HQ.jpeg">
+
+      <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+      <img class="slide-img" src="./imgs/propal_slider2_HQ.jpeg">
+
+      <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+      <img class="slide-img" src="./imgs/propal_slider3_HQ.jpg">
+
+    </div>
+
+    <!-- <img class="img_acceuil" src="./imgs/propal_slider3_HQ.jpg" alt="fond colorer"> -->
+    <h1 class="titrep">Découvrez nos formations</h1>
+    <h3>Par profil</h3>
+    <!-- BOUTONS GRIS -->
+    <div class="links profile">
+      <a href="#alernant" class="bts">
+        <div class="item-prolile"><span>Alternant</span></div>
+      </a>
+      <a href="#emploi" class="bts">
+        <div class="item-prolile"><span>Demandeur d'emploi</span></div>
+      </a>
+      <a href="entreprise" class="bts">
+        <div class="item-prolile"><span>Entreprise</span></div>
+      </a>
+      <a href="salarie" class="bts">
+        <div class="item-prolile"><span>Salariés</span></div>
+      </a>
+    </div>
+
+    <h3>Par secteur</h3>
+    <div class="links">
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt1"><img src="./imgs/bat-genie-therma-clim.svg" alt="bat-genie">Bâtiments Génie
+          technique & Climatique</div>
+      </a>
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt2"><img src="./imgs/CarrièresEmploi.svg" alt="car-emploi">Carrières & Emploi
+        </div>
+      </a>
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt3"><img src="./imgs/Numérique.svg" alt="numerique">Numérique</div>
+      </a>
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt4"><img src="./imgs/ÉlectricitéRéseaux_Télécoms.svg"
+            alt="elec">Electricité & Réseaux télécoms</div>
+      </a>
+    </div>
+    <div class="links">
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt5">Santé & Social</div>
+      </a>
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt6">Système Embarqués</div>
+      </a>
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt7">Qualité & Sécurité & Environnement</div>
+      </a>
+      <a href="#" class="bts">
+        <div class="buttonsindex" id="tbt8">Tertiaire</div>
+      </a>
+    </div>
+    <div class="containergrilles">
+      <div class="grid-item box1">
+
+        <h3>Les formations en alternance</h3>
+        <p>Des entrées en alternance tout au long de l’année. L’ADRAR vous aide dans votre recherche d’entreprise et
+          vous accompagne tout au long de votre parcours en alternance.</p>
+        <a href="#">Découvrir les formations</a>
+
+
+      </div>
+      <div class="grid-item box2">
+        <h3>Bilan de compétences</h3>
+        <p>Faire le point sur ses expériences pour élaborer son projet professionnel.</p>
+        <a href="#">Faire un bilan</a>
+      </div>
+      <div class="grid-item box3">
+        <h3>VAE</h3>
+        <p>Accompagnement à la validation des acquis de l’expérience sur la base de vos expériences.</p>
+        <a href="#">En savoir plus</a>
+      </div>
+      <div class="grid-item box4">
+        <h3>Formation 100% certifiantes et éligibles au CPF</h3>
+        <p>Nos conseillers vous accueillent pour vous informer et vous accompagner dans le montage de votre dossier.</p>
+        <a href="#">Découvrir les financements</a>
+      </div>
+      <div class="grid-item box5">
+        <h3>Formation à destination des demandeurs d'emploi</h3>
+        <p>Suivant l’objectif de votre projet professionnel (développer vos compétences, acquérir des savoirs de bases,
+          changer de métier…), de nombreux dispositifs existent et sont accessibles gratuitement aux demandeurs
+          d’emplois.</p>
+        <a href="#">Découvrir les formations</a>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div class="imgfooter">
+      <a class="lienfooter" href="https://fr-fr.facebook.com" target="_blank"><img src="imgs/fb.svg" alt="logo"></a>
+      <a class="lienfooter" href="https://www.linkedin.com" target="_blank"><img src="imgs/linkedIn.svg" alt="logo"></a>
+      <a class="lienfooter" href="https://twitter.com/?lang=fr" target="_blank"><img src="imgs/twitt.svg"
+          alt="logo"></a>
+      <a class="lienfooter" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="imgs/inta.svg"
+          alt="logo"></a>
+    </div>
+    <div class="mention">
+      <div class="footerun">© 2022 ADRAR Formation</div>
+      <div class="footerdeux">
+        <a class="footermention" href="#">Mentions légales</a>
+        <a class="footermention" href="#">Vie privée</a>
+        <a class="footermention" href="#">Conditions générale de ventes</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

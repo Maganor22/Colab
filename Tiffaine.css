@@ -1,0 +1,253 @@
+/* Titres */
+h1{
+    text-align: center;
+    color: green;
+    font-size: 35px;
+}
+
+h2{
+    color: green;
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 20px 0 10px 10px;
+}
+/*--------------------------------------------------------------------*/
+
+/* Menu de la page */
+.ancres{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 60px 50px 50px;
+    background-color: white;
+}
+
+.buttons{
+    border: 2px black solid;
+    width: 180px;
+    height: 50px;
+    background-image: radial-gradient(circle at center, rgba(217, 255, 0, 0.068), green);
+    border-radius: 5px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:50px;
+}
+
+.bts{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+@keyframes buttanimation{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+    }
+
+.buttons:hover{
+    animation: buttanimation 1s infinite alternate;
+}
+/*--------------------------------------------------------------------*/
+
+/* Contenu de la page */
+main{
+    margin: 0 10% 0 10%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid greenyellow;
+    box-shadow: inset;
+}
+
+p{
+    font-size: 16px;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.hidden{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hidden:hover{
+    font-weight: lighter;
+    color: grey;
+}
+/*--------------------------------------------------------------------*/
+
+/* Images du haut de la partie présentation */
+.images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    float: left;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+#engrenage{
+    height: 250px;
+    width: 250px;
+    margin: 100px 100px 100px 100px;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#engrenage:hover{
+    transition: 10s ease-in-out;
+    transform: rotate(2160deg);
+}
+
+@keyframes img2animation{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#interfaceapp{
+    height: 300px;
+    width: 450px;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    animation: img2animation 3s;
+}
+/*--------------------------------------------------------------------*/
+
+/* Images du bas de la partie sur le fonctionnement */
+.galerie{
+    height: 200px;
+    width: 350px;
+    float: none;
+    display: block inline;
+    margin: 10px;
+}
+.galerie:active{
+    transform: scale(2);
+}
+
+/*--------------------------------------------------------------------*/
+
+/* Vidéo (+contour) de la partie présentation */
+iframe{
+    height: 350px;
+    width: 500px;
+}
+
+#video{
+    border: double 6px grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(121, 169, 231);
+    height: 380px;
+    width: 550px;
+    margin: auto;
+}
+/*--------------------------------------------------------------------*/
+
+/* Liste dans la partie sur les types d'API */
+.mylist{
+    list-style-type: circle;
+    margin-left:50px;
+    margin-bottom: 10px;
+}
+/*--------------------------------------------------------------------*/
+
+/* Tableaux des types d'API */
+table{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    color: white;
+    background-color: none;
+    table-layout: auto;
+    width: 400px;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+}
+
+td:active{
+    border: solid lightgreen 2px;
+    background-color: green;
+}
+
+th{
+    color: lightcoral;
+    font-weight: bolder;
+}
+/*--------------------------------------------------------------------*/
+
+
+span p{
+    color: lightsalmon;
+    text-shadow: 1px 1px 2px red;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 50px 0px 50px;
+    padding: 5px;
+    border-width: 1px;
+    border: solid 1px black;
+    border-style: inset;
+}
+
+input{
+    background-image: linear-gradient(blue, purple, yellow, orange, pink, gray, red, green) ;
+    color: black solid 2px;
+    margin: 20px;
+}
+
+#bouthaut{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+main p:last-child{
+    color: gray;
+    font-weight: bold;
+}
+
+header{
+background-color: white;
+margin-bottom: 20px;
+}
