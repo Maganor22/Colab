@@ -31,11 +31,11 @@ h3 {
     width: 60px;
     top: 2px;
     left: 5px;
-    z-index: 101;
+    z-index: 102;
 }
 
 nav {
-    z-index: 101;
+    z-index: 102;
     order: 1;
     position: fixed;
     margin-top: 500px;
@@ -403,7 +403,16 @@ footer {
     margin-left: 5%;
 }
 
+/* .footerdeux {
+    margin-right: 15%;
+    position: relative;
+    left: 13%;
+} */
+
 .footerdeux {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-right: 15%;
     position: relative;
     left: 13%;
@@ -576,10 +585,10 @@ body::-webkit-scrollbar-thumb {
         margin-top: 15px;
     }
 
-    footer {
+/*     footer {
         width: 243vw;
         display: none;
-    }
+    } */
 }
 
 
@@ -611,13 +620,13 @@ body::-webkit-scrollbar-thumb {
         margin-left: 145px;
     }
 
-    footer {
+/*     footer {
         width: 131vw;
     }
 
     .footerdeux {
         margin-right: 25%
-    }
+    } */
 
 }
 
@@ -631,14 +640,14 @@ body::-webkit-scrollbar-thumb {
         margin-left: 50px;
     }
 
-    footer {
+/*     footer {
         width: 110.3vw;
     }
     
     .footerdeux {
         margin-right: 25%
     }
-
+ */
 }
 
 
