@@ -465,58 +465,45 @@ body::-webkit-scrollbar-thumb {
     footer {
         width: 243vw;
     }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #imglogo {
-        height: 40px;
-        width: 30px;
+    main {
+        display: flex;
+        justify-content: center;
+        margin: none;
     }
-
-    #up,
-    .ancres {
-        margin-left: 200px;
+    .man {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    ul:not(.nav) li:not(.nav) {
-        margin-left: 50px;
+    textarea {
+        height: 10em;
+        width: 19em;
     }
-
-    .nav {
-        justify-content:center;
+    fieldset {
+        padding: 20px;
+        border: black 1px solid;
+        border-radius: 5%;
+        width: 150px;
+        margin-left: 5px;
+        background-color: #ebf4ff
+    
+    }   
+    .Centres {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-row: 1;
+        grid-column: 2;
+    
     }
     
-    .nav li {
-        margin: 0 30px 0 30px;
-    }
-
-    .allvids {
-        margin-left: 145px;
-    }
-
-    footer {
-        width: 131vw;
-    }
-
-    .footerdeux {
-        margin-right: 25%
+    .Centres>div {
+        max-width: 250px;
+        width: 250px;
+        max-height: 150px;
+        background-color: #ebf4ff;
+        border-radius: 10%;
+        padding: 10px;
     }
 }
-
-@media only screen and (min-width: 1024px) and (max-width: 1440px) { /* LAPTOP */
-/*     .allvids {
-        margin-left: 200px;
-    } */
-
-
-    ul:not(.nav) li {
-        margin-left: 50px;
-    }
-
-    footer {
-        width: 110.3vw;
-    }
-}
-
-
-/* FIN RESPONSIVE */
