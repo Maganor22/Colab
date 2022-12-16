@@ -589,22 +589,32 @@ body::-webkit-scrollbar-thumb {
         height: 40px;
         width: 30px;
     }
-
-    #up,
-    .ancres {
-        margin-left: 200px;
+    .man {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    ul:not(.nav) li:not(.nav) {
-        margin-left: 50px;
+    textarea {
+        height: 10em;
+        width: 19em;
     }
-
-    .nav {
-        justify-content:center;
-    }
+    fieldset {
+        padding: 20px;
+        border: black 1px solid;
+        border-radius: 5%;
+        width: 150px;
+        margin-left: 5px;
+        background-color: #ebf4ff
     
-    .nav li {
-        margin: 0 30px 0 30px;
+    }   
+    .Centres {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-row: 1;
+        grid-column: 2;
+    
     }
 
     .allvids {
@@ -623,6 +633,3 @@ body::-webkit-scrollbar-thumb {
         margin-left: 50px;
     }
 }
-
-
-/* FIN RESPONSIVE */
