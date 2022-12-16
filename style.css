@@ -403,12 +403,6 @@ footer {
     margin-left: 5%;
 }
 
-/* .footerdeux {
-    margin-right: 15%;
-    position: relative;
-    left: 13%;
-} */
-
 .footerdeux {
     display: flex;
     flex-direction: row;
@@ -585,10 +579,6 @@ body::-webkit-scrollbar-thumb {
         margin-top: 15px;
     }
 
-/*     footer {
-        width: 243vw;
-        display: none;
-    } */
 }
 
 
@@ -620,14 +610,6 @@ body::-webkit-scrollbar-thumb {
         margin-left: 145px;
     }
 
-/*     footer {
-        width: 131vw;
-    }
-
-    .footerdeux {
-        margin-right: 25%
-    } */
-
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) { /* LAPTOP */
@@ -639,15 +621,6 @@ body::-webkit-scrollbar-thumb {
     ul:not(.nav) li {
         margin-left: 50px;
     }
-
-/*     footer {
-        width: 110.3vw;
-    }
-    
-    .footerdeux {
-        margin-right: 25%
-    }
- */
 }
 
 
