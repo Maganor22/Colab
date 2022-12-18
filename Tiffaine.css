@@ -26,7 +26,7 @@ h1, h2, h3{
 .ancresbout{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 50px 50px 50px;
+    margin: auto;
     background-color: lightseagreen;
 }
 
@@ -110,20 +110,19 @@ main p:nth-child(6){
     color: grey;
 }
 
-span p{
+span{
     color: lightsalmon;
     text-shadow: 1px 1px 2px red;
     font-weight: bold;
     text-align: center;
-    overflow-wrap: break-word;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0px 50px 0px 50px;
-    padding: 5px;
     border-width: 1px;
-    border: solid 1px black;
+    border: solid 1px black auto;
     border-style: inset;
+    display: block;
+    word-wrap: break-word;
+    margin:10px;
+    padding:5px;
 }
 
 main p:last-child{
@@ -136,16 +135,17 @@ main p:last-child{
 .images{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: 1fr;
     float: left;
+    justify-items: center;
     align-items: center; 
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 #engrenage{
-    height: 250px;
-    width: 250px;
-    margin: 100px 100px 100px 100px;
+    height: 230px;
+    width: 320px;
+    margin: 100px;
     display: grid;
     grid-column: 1;
     grid-row: 1;
@@ -187,7 +187,7 @@ main p:last-child{
     margin: 10px;
 }
 .galerie:active{
-    transform: scale(2);
+    transform: scale(1.6);
 }
 
 /*--------------------------------------------------------------------*/
@@ -214,22 +214,30 @@ iframe{
 /* Liste dans la partie sur les types d'API */
 .mylist{
     list-style-type: circle;
-    margin-left:50px;
+    list-style-position: outside;
+    word-break: break-word;
+    margin-left: 50px;
     margin-bottom: 10px;
 }
+
 /*--------------------------------------------------------------------*/
 
 /* Tableaux des types d'API */
-table{
-    display: flex;
-    justify-content: center;
+#catego{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#descrip{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 td{
     color: white;
     background-color: none;
-    table-layout: auto;
-    width: 400px;
     font-size: 15px;
     text-align: center;
     margin: 5px;
@@ -245,6 +253,7 @@ th{
     color: lightcoral;
     font-weight: bolder;
 }
+
 /*--------------------------------------------------------------------*/
 
 /* Bouton retour */
@@ -262,38 +271,3 @@ input{
 
 /* Responsive */
 
-@media screen and (orientation:portrait){
-    .ancresbout{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        margin: auto;
-        background-color: lightseagreen;
-    }
-}
-
-
-@media only screen and (max-width: 767px){
-    
-    .bts{
-        text-decoration: none;
-        font-size: 10px;
-        color: black;
-    }
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-    .ancresbout{
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        background-color: lightseagreen;
-    }
-}
-
-
-@media only screen and (min-width: 1024px) and (max-width: 1440px)/* LAPTOP */{
-
-}

@@ -49,7 +49,7 @@
 
   <main>
     <div class="images">
-      <img src="./imgs/994152.png" alt="imageapi" id="engrenage"><br>
+      <img src="./imgs/994152.png" alt="imageapi" id="engrenage">
       <img src="./imgs/What-is-an-API.jpg" alt="imageapi2" id="interfaceapp">
     </div>
     <h2>Présentation</h2><a id="presentation"></a>
@@ -164,13 +164,13 @@
       exploré les principaux types d'architectures d'API, passons donc au champ d'application.</p>
 
     <table>
-      <tr>
+      <tr id="catego">
         <th>API privées</th>
         <th>API partenaires</th>
         <th>API publiques</th>
         <th>API composites</th>
       </tr>
-      <tr>
+      <tr id="descrip">
         <td>L'API n'est utilisable qu'en interne. Cette approche permet de garder un contrôle total sur l'API. L’API
           interne, privée ou Private API, accessible uniquement en interne et conçue pour les besoins spécifiques d’une
           entreprise souhaitant en garder le contrôle total. Elles sont internes à une entreprise et ne servent qu'à
@@ -211,17 +211,14 @@
       est un style d'architecture. Cela signifie qu'il n'existe aucune norme officielle qui régit les API web
       RESTful.</p>
     <p>Selon la définition proposée par Roy Fielding dans sa thèse « Architectural Styles and the Design of
-      Network-based Software Architectures », les API sont RESTful tant qu'elles respectent les six contraintes de
-      conception d'un système RESTful :
-    <ol>
-      <li class="mylist">Architecture client-serveur : une architecture REST est composée de clients, de serveurs et de
-        ressources et elle traite les requêtes via le protocole HTTP.</li>
+      Network-based Software Architectures », les API sont RESTful tant qu'elles respectent les six contraintes de conception d'un système RESTful : </p>
+    
+      <p>
+      <ol>
+      <li class="mylist">Architecture client-serveur : une architecture REST est composée de clients, de serveurs et de ressources et elle traite les requêtes via le protocole HTTP.</li>
       <li class="mylist"> Serveur stateless : le contenu du client n'est jamais stocké sur le serveur entre les
-        requêtes. Les
-        informations sur l'état de la session sont, quant à elles, stockées sur le client. </li>
-      <li class="mylist">Mémoire cache : la mise en mémoire cache permet de se passer de certaines interactions entre le
-        client et le
-        serveur.</li>
+        requêtes. Les informations sur l'état de la session sont, quant à elles, stockées sur le client. </li>
+      <li class="mylist">Mémoire cache : la mise en mémoire cache permet de se passer de certaines interactions entre le client et le serveur.</li>
       <li class="mylist">Système à couches : des couches supplémentaires peuvent assurer la médiation dans les
         interactions entre le
         client et le serveur. Ces couches peuvent remplir des fonctions supplémentaires, telles que l'équilibrage de
@@ -244,19 +241,11 @@
         ressource, le client
         REST doit être en mesure de découvrir toutes les autres actions disponibles par des hyperliens.</li>
     </ol>
-    </p>
+  </p>
 
-    <p>Ces contraintes peuvent sembler difficiles à appliquer, mais dans les faits, elles le sont moins qu'un protocole.
-      C'est pour cette raison que les API RESTful prennent progressivement le pas sur les API SOAP. Ces dernières
-      années, la spécification OpenAPI s'est imposée comme la norme commune pour définir les API REST. La norme OpenAPI
-      permet aux développeurs de créer des interfaces d'API REST indépendantes du langage de manière à ce que les
-      utilisateurs
-      puissent les comprendre avec un minimum d'approximation. Une autre norme d'API est en train d'émerger : GraphQL,
-      un langage de requête et un environnement d'exécution côté serveur qui se propose de remplacer l'architecture
-      REST. GraphQL s'attache à fournir aux clients uniquement les données qu'ils ont demandées, et rien de plus.
-      Utilisé à la
-      place de REST, GraphQL permet aux développeurs de créer des requêtes qui extraient les données de plusieurs
-      sources à l'aide d'un seul appel d'API.</p>
+    <p>
+      Ces contraintes peuvent sembler difficiles à appliquer, mais dans les faits, elles le sont moins qu'un protocole. C'est pour cette raison que les API RESTful prennent progressivement le pas sur les API SOAP. Ces dernières années, la spécification OpenAPI s'est imposée comme la norme commune pour définir les API REST. La norme OpenAPI permet aux développeurs de créer des interfaces d'API REST indépendantes du langage de manière à ce que les utilisateurs puissent les comprendre avec un minimum d'approximation. Une autre norme d'API est en train d'émerger : GraphQL, un langage de requête et un environnement d'exécution côté serveur qui se propose de remplacer l'architecture REST. GraphQL s'attache à fournir aux clients uniquement les données qu'ils ont demandées, et rien de plus. Utilisé à la place de REST, GraphQL permet aux développeurs de créer des requêtes qui extraient les données de plusieurs sources à l'aide d'un seul appel d'API.
+     </p>  
 
     <h2>Exemples</h2><a id="exemples"></a>
     <p> Les APIs sont partout et servent à une foule de choses. Des prévisions météorologiques sur votre smartphone à
