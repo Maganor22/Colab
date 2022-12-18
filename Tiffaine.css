@@ -2,8 +2,8 @@
 h1{
     text-align: center;
     color: green;
-    font-size: 35px;
     background-color: lightseagreen;
+    font-size: 35px;
 }
 
 h2{
@@ -31,20 +31,20 @@ h1, h2, h3{
 }
 
 .buttons{
-    border: 2px black solid;
-    width: 180px;
-    height: 50px;
     background-image: radial-gradient(circle at center, rgba(217, 255, 0, 0.068), green);
-    border-radius: 5px;
     text-align:center;
     vertical-align:middle;
     line-height:50px;
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
 }
 
 .bts{
     text-decoration: none;
-    font-size: 20px;
     color: black;
+    font-size: 20px;
 }
 
 @keyframes buttanimation{
@@ -75,7 +75,6 @@ main{
     padding: 10px;
     border-radius: 15px;
     border: 2px solid lightgreen;
-    box-shadow: inset;
 }
 
 header{
@@ -85,7 +84,7 @@ header{
 
 p{
     font-size: 16px;
-    padding-left: 15px;
+    padding: 15px;
     margin: 10px;
 }
 
@@ -139,13 +138,13 @@ main p:last-child{
     float: left;
     justify-items: center;
     align-items: center; 
-    margin-top: auto;
+    margin: 10px;
 }
 
 #engrenage{
-    height: 230px;
+    height: 300px;
     width: 320px;
-    margin: 100px;
+    margin: 80px;
     display: grid;
     grid-column: 1;
     grid-row: 1;
@@ -183,7 +182,7 @@ main p:last-child{
     height: 200px;
     width: 350px;
     float: none;
-    display: block inline;
+    display: inline-block;
     margin: 10px;
 }
 .galerie:active{
@@ -216,9 +215,15 @@ iframe{
     list-style-type: circle;
     list-style-position: outside;
     word-break: break-word;
-    margin-left: 50px;
-    margin-bottom: 10px;
+    padding: 10px;
+    float: none;
 }
+
+ol{
+    margin : 10px 60px 10px 60px;
+    padding: 5px;
+}
+
 
 /*--------------------------------------------------------------------*/
 

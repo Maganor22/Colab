@@ -13,6 +13,7 @@
 <body>
 
   <header>
+
     <nav>
       <a href="index.html"><img src="./imgs/Logoadrar.svg" alt="logoadrar" id="imglogo"></a>
       <ul>
@@ -48,11 +49,14 @@
   </header>
 
   <main>
+
+    <a id="presentation"></a>
     <div class="images">
       <img src="./imgs/994152.png" alt="imageapi" id="engrenage">
       <img src="./imgs/What-is-an-API.jpg" alt="imageapi2" id="interfaceapp">
     </div>
-    <h2>Présentation</h2><a id="presentation"></a>
+    
+    <h2>Présentation</h2>
     <h3>Qu'est-ce que l'acronyme API ?</h3>
     <p>Le terme API est un acronyme qui signifie « Application Programming Interface ».</p>
     <p class="hidden">En français, une API se traduit par Interface de Programmation Applicative ou interface de
@@ -78,17 +82,17 @@
       données à intervalles régulières ou soumettre une adresse postale (pour récupérer une coordonnée géographique)…
     </p>
 
-    <div id="video">
-      <iframe width="770" height="433" src="https://www.youtube.com/embed/Jc_Riqr58tA" title="C'est quoi une API?"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
     <h3>À quoi sert l’API ?</h3>
     <p>L’API est un rouage central indispensable au fonctionnement et au développement du web et de nombreuses
       applications. Cette technologie agit en tant qu’intermédiaire entre deux systèmes informatiques indépendants afin
       qu’ils puissent échanger et exploiter les fonctionnalités d’une application et le contenu d’une base de données ou
       d’un système de fichiers.</p>
+
+      <div id="video">
+        <iframe width="770" height="433" src="https://www.youtube.com/embed/Jc_Riqr58tA" title="C'est quoi une API?"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
     <h3>L'histoire des API en quelques mots</h3>
     <p>Les API sont apparues à l'aube de l'informatique, avant même les ordinateurs personnels. À cette époque, elles
@@ -97,7 +101,8 @@
       messages entre les mainframes. Presque 30 ans après, les API sont sorties de leurs environnements locaux. Au début
       des années 2000, elles sont devenues importantes pour l'intégration des données à distance.</p>
 
-    <h2>Fonctionnement</h2><a id="fonctionnement"></a>
+      <a id="fonctionnement"></a>
+    <h2>Fonctionnement</h2>
     <p>Les API permettent à votre produit ou service de communiquer avec d'autres produits et services sans connaître
       les détails de leur mise en œuvre. Elles simplifient le développement d'applications et vous font ainsi gagner du
       temps et de l'argent. Lorsque vous concevez de nouveaux outils et produits, ou que vous assurez la gestion de ceux
@@ -158,8 +163,8 @@
       extraient les informations issues de plusieurs sources grâce à une unique requête d’API.
     </p>
 
-    <h2>Les différents types d’API </h2><a id="typesapi"></a>
-
+    <a id="typesapi"></a>
+    <h2>Les différents types d’API </h2>
     <p>Les API sont classées à la fois en fonction de leur architecture et de leur champ d'utilisation. Nous avons déjà
       exploré les principaux types d'architectures d'API, passons donc au champ d'application.</p>
 
@@ -210,10 +215,8 @@
           REST</a></mark>). Ces deux éléments diffèrent sur un point fondamental : SOAP est un protocole, alors que REST
       est un style d'architecture. Cela signifie qu'il n'existe aucune norme officielle qui régit les API web
       RESTful.</p>
-    <p>Selon la définition proposée par Roy Fielding dans sa thèse « Architectural Styles and the Design of
-      Network-based Software Architectures », les API sont RESTful tant qu'elles respectent les six contraintes de conception d'un système RESTful : </p>
+    <p>Selon la définition proposée par Roy Fielding dans sa thèse « Architectural Styles and the Design of Network-based Software Architectures », les API sont RESTful tant qu'elles respectent les six contraintes de conception d'un système RESTful : </p>
     
-      <p>
       <ol>
       <li class="mylist">Architecture client-serveur : une architecture REST est composée de clients, de serveurs et de ressources et elle traite les requêtes via le protocole HTTP.</li>
       <li class="mylist"> Serveur stateless : le contenu du client n'est jamais stocké sur le serveur entre les
@@ -241,13 +244,13 @@
         ressource, le client
         REST doit être en mesure de découvrir toutes les autres actions disponibles par des hyperliens.</li>
     </ol>
-  </p>
 
     <p>
       Ces contraintes peuvent sembler difficiles à appliquer, mais dans les faits, elles le sont moins qu'un protocole. C'est pour cette raison que les API RESTful prennent progressivement le pas sur les API SOAP. Ces dernières années, la spécification OpenAPI s'est imposée comme la norme commune pour définir les API REST. La norme OpenAPI permet aux développeurs de créer des interfaces d'API REST indépendantes du langage de manière à ce que les utilisateurs puissent les comprendre avec un minimum d'approximation. Une autre norme d'API est en train d'émerger : GraphQL, un langage de requête et un environnement d'exécution côté serveur qui se propose de remplacer l'architecture REST. GraphQL s'attache à fournir aux clients uniquement les données qu'ils ont demandées, et rien de plus. Utilisé à la place de REST, GraphQL permet aux développeurs de créer des requêtes qui extraient les données de plusieurs sources à l'aide d'un seul appel d'API.
      </p>  
 
-    <h2>Exemples</h2><a id="exemples"></a>
+     <a id="exemples"></a>
+    <h2>Exemples</h2>
     <p> Les APIs sont partout et servent à une foule de choses. Des prévisions météorologiques sur votre smartphone à
       Netflix, tout repose sur des APIs. Ce qui vous permet, ainsi qu’à vos voisins, de regarder votre application météo
       le matin, ce sont les APIs. Un fournisseur de données météo fait des prédictions et partage ses données en temps
