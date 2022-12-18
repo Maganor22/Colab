@@ -2,8 +2,16 @@
 h1{
     text-align: center;
     color: green;
+<<<<<<< HEAD
     background-color: lightseagreen;
     font-size: 35px;
+=======
+    font-size: 35px;
+<<<<<<< HEAD
+    background-color: lightseagreen;
+=======
+>>>>>>> gilles
+>>>>>>> aa51cdc242edd3a77cad11de9f19b070f61e0e29
 }
 
 h2{
@@ -23,11 +31,19 @@ h1, h2, h3{
 /*--------------------------------------------------------------------*/
 
 /* Menu de la page */
+<<<<<<< HEAD
 .ancresbout{
     display: flex;
     justify-content: space-evenly;
     margin: auto;
     background-color: lightseagreen;
+=======
+.ancres{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 60px 50px 50px;
+    background-color: white;
+>>>>>>> gilles
 }
 
 .buttons{
@@ -65,15 +81,19 @@ h1, h2, h3{
 /*--------------------------------------------------------------------*/
 
 /* Contenu de la page */
+<<<<<<< HEAD
 body{
     background-color: lightseagreen;
 }
 
+=======
+>>>>>>> gilles
 main{
     margin: 0 10% 0 10%;
     background-color: white;
     padding: 10px;
     border-radius: 15px;
+<<<<<<< HEAD
     border: 2px solid lightgreen;
 }
 
@@ -82,6 +102,12 @@ header{
     margin-bottom: 20px;
     }
 
+=======
+    border: 2px solid greenyellow;
+    box-shadow: inset;
+}
+
+>>>>>>> gilles
 p{
     font-size: 16px;
     padding: 15px;
@@ -92,6 +118,7 @@ strong{
     font-weight: bolder;
 }
 
+<<<<<<< HEAD
 header:first-child{
     color: lightseagreen;
     text-align: center;
@@ -99,6 +126,9 @@ header:first-child{
 }
 
 main p:nth-child(6){
+=======
+.hidden{
+>>>>>>> gilles
     color: white;
     text-align: center;
     font-size: 15px;
@@ -108,6 +138,7 @@ main p:nth-child(6){
     font-weight: lighter;
     color: grey;
 }
+<<<<<<< HEAD
 
 span{
     color: lightsalmon;
@@ -128,6 +159,8 @@ main p:last-child{
     color: gray;
     font-weight: bold;
 }
+=======
+>>>>>>> gilles
 /*--------------------------------------------------------------------*/
 
 /* Images du haut de la partie présentation */
@@ -194,7 +227,11 @@ main p:last-child{
 /* Vidéo (+contour) de la partie présentation */
 iframe{
     height: 350px;
+<<<<<<< HEAD
     width: 450px;
+=======
+    width: 500px;
+>>>>>>> gilles
 }
 
 #video{
@@ -202,10 +239,17 @@ iframe{
     border-radius: 10px;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding: 10px;
     background-color: rgb(121, 169, 231);
     height: auto;
     width: auto;
+=======
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(121, 169, 231);
+    height: 380px;
+    width: 550px;
+>>>>>>> gilles
     margin: auto;
 }
 /*--------------------------------------------------------------------*/
@@ -261,7 +305,27 @@ th{
 
 /*--------------------------------------------------------------------*/
 
+<<<<<<< HEAD
 /* Bouton retour */
+=======
+
+span p{
+    color: lightsalmon;
+    text-shadow: 1px 1px 2px red;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 50px 0px 50px;
+    padding: 5px;
+    border-width: 1px;
+    border: solid 1px black;
+    border-style: inset;
+}
+
+>>>>>>> gilles
 input{
     background-image: linear-gradient(blue, purple, yellow, orange, pink, gray, red, green) ;
     color: black solid 2px;
@@ -272,7 +336,62 @@ input{
     display: flex;
     justify-content: center;
 }
+<<<<<<< HEAD
 /*--------------------------------------------------------------------*/
 
 /* Responsive */
 
+<<<<<<< HEAD
+=======
+@media screen and (orientation:portrait){
+    .ancresbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        margin: auto;
+        background-color: lightseagreen;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    
+    .bts{
+        text-decoration: none;
+        font-size: 10px;
+        color: black;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .ancresbout{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: lightseagreen;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px)/* LAPTOP */{
+
+}
+=======
+
+body{
+    background-color: aquamarine;
+}
+
+main p:last-child{
+    color: gray;
+    font-weight: bold;
+}
+
+header{
+background-color: white;
+margin-bottom: 20px;
+}
+>>>>>>> gilles
+>>>>>>> aa51cdc242edd3a77cad11de9f19b070f61e0e29
