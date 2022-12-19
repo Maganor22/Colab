@@ -315,13 +315,7 @@ div .grid-item {
 .grid-item p {
     margin: 0 10px 50px 15px;
 }
-
-    
-
 /* fin grille */
-
-
-
 /* FIN MAIN */
 
 
@@ -367,7 +361,7 @@ img {
 
 .slide-img {
     width: 100%;
-    height: 465px;
+    height: auto;
     position: absolute;
     top: 0;
 }
@@ -579,6 +573,47 @@ body::-webkit-scrollbar-thumb {
         margin-top: 15px;
     }
 
+    main {
+        display: flex;
+        justify-content: center;
+        margin: none;
+    }
+    .man {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    textarea {
+        height: 10em;
+        width: 19em;
+    }
+    fieldset {
+        padding: 20px;
+        border: black 1px solid;
+        border-radius: 5%;
+        width: 150px;
+        margin-left: 5px;
+        background-color: #ebf4ff
+    
+    }   
+    .Centres {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-row: 1;
+        grid-column: 2;
+    
+    }
+    
+    .Centres>div {
+        max-width: 250px;
+        width: 250px;
+        max-height: 150px;
+        background-color: #ebf4ff;
+        border-radius: 10%;
+        padding: 10px;
+    }
 }
 
 
