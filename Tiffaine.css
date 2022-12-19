@@ -2,20 +2,20 @@
 h1{
     text-align: center;
     color: green;
-    font-size: 35px;
     background-color: lightseagreen;
+    font-size: 40px;
 }
 
 h2{
     color: green;
+    font-size: 30px;
+}
+
+h4{
     font-size: 25px;
 }
 
-h3{
-    font-size: 20px;
-}
-
-h1, h2, h3{
+h1, h2, h4{
     font-weight: bold;
     text-decoration: underline;
     margin: 20px 0 10px 10px;
@@ -26,24 +26,23 @@ h1, h2, h3{
 .ancresbout{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 50px 50px 50px;
     background-color: lightseagreen;
 }
 
-.buttons{
-    border: 2px black solid;
-    width: 180px;
-    height: 50px;
+.buttonsts{
     background-image: radial-gradient(circle at center, rgba(217, 255, 0, 0.068), green);
-    border-radius: 5px;
     text-align:center;
     vertical-align:middle;
     line-height:50px;
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    margin: 10px;
 }
 
 .bts{
     text-decoration: none;
-    font-size: 20px;
     color: black;
 }
 
@@ -59,7 +58,7 @@ h1, h2, h3{
     }
     }
 
-.buttons:hover{
+.buttonsts:hover{
     animation: buttanimation 1s infinite alternate;
 }
 /*--------------------------------------------------------------------*/
@@ -72,10 +71,7 @@ body{
 main{
     margin: 0 10% 0 10%;
     background-color: white;
-    padding: 10px;
     border-radius: 15px;
-    border: 2px solid lightgreen;
-    box-shadow: inset;
 }
 
 header{
@@ -84,8 +80,8 @@ header{
     }
 
 p{
-    font-size: 16px;
-    padding-left: 15px;
+    font-size: 18px;
+    padding: 15px;
     margin: 10px;
 }
 
@@ -96,13 +92,13 @@ strong{
 header:first-child{
     color: lightseagreen;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 main p:nth-child(6){
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .hidden:hover{
@@ -110,20 +106,18 @@ main p:nth-child(6){
     color: grey;
 }
 
-span p{
+span{
     color: lightsalmon;
     text-shadow: 1px 1px 2px red;
     font-weight: bold;
     text-align: center;
-    overflow-wrap: break-word;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0px 50px 0px 50px;
-    padding: 5px;
     border-width: 1px;
     border: solid 1px black;
     border-style: inset;
+    display: block;
+    margin:10px;
+    padding:5px;
 }
 
 main p:last-child{
@@ -136,16 +130,17 @@ main p:last-child{
 .images{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: 1fr;
     float: left;
+    justify-items: center;
     align-items: center; 
-    margin-top: 30px;
+    margin: 10px;
 }
 
 #engrenage{
-    height: 250px;
-    width: 250px;
-    margin: 100px 100px 100px 100px;
+    height: 300px;
+    width: 320px;
+    margin: 80px;
     display: grid;
     grid-column: 1;
     grid-row: 1;
@@ -180,14 +175,21 @@ main p:last-child{
 
 /* Images du bas de la partie sur le fonctionnement */
 .galerie{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: lightseagreen;
+}
+
+.imgss{
     height: 200px;
-    width: 350px;
-    float: none;
-    display: block inline;
+    width: 310px;
     margin: 10px;
 }
-.galerie:active{
-    transform: scale(2);
+
+.imgss:active{
+    transform: scale(1.6);
 }
 
 /*--------------------------------------------------------------------*/
@@ -199,37 +201,42 @@ iframe{
 }
 
 #video{
-    border: double 6px grey;
-    border-radius: 10px;
+    background-color: lightseagreen;
+    border: solid 5px lightseagreen;
+    padding: 10px;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    background-color: rgb(121, 169, 231);
-    height: auto;
-    width: auto;
-    margin: auto;
 }
 /*--------------------------------------------------------------------*/
 
 /* Liste dans la partie sur les types d'API */
 .mylist{
     list-style-type: circle;
-    margin-left:50px;
-    margin-bottom: 10px;
+    list-style-position: outside;
+    padding: 10px;
+    float: none;
+    background-color: lightseagreen;
+    margin: 5px;
 }
+
+ol{
+    padding: 5px;
+    background-color: lightseagreen;
+}
+
+
 /*--------------------------------------------------------------------*/
 
 /* Tableaux des types d'API */
-table{
-    display: flex;
-    justify-content: center;
+#catego, #descrip{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 td{
     color: white;
-    background-color: none;
-    table-layout: auto;
-    width: 400px;
+    background-color: transparent;
     font-size: 15px;
     text-align: center;
     margin: 5px;
@@ -245,13 +252,15 @@ th{
     color: lightcoral;
     font-weight: bolder;
 }
+
 /*--------------------------------------------------------------------*/
 
 /* Bouton retour */
-input{
-    background-image: linear-gradient(blue, purple, yellow, orange, pink, gray, red, green) ;
-    color: black solid 2px;
+.bth{
+    background-image: linear-gradient(blue, purple, yellow, orange, pink, gray, red, green);
+    border: solid black 1px;
     margin: 20px;
+    padding: 5px;
 }
 
 #bouthaut{
@@ -260,40 +269,317 @@ input{
 }
 /*--------------------------------------------------------------------*/
 
+#logo{
+    margin: 10px;
+}
+
+
 /* Responsive */
 
-@media screen and (orientation:portrait){
+@media screen and (min-width: 320px) and (max-width: 767px){
+
     .ancresbout{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-items: center;
+        align-items: center;
         margin: auto;
         background-color: lightseagreen;
     }
-}
 
-
-@media only screen and (max-width: 767px){
-    
-    .bts{
-        text-decoration: none;
-        font-size: 10px;
-        color: black;
+    .buttonsts{
+        width: 110px;
+        font-size: 15px;
     }
+
+    #engrenage, #interfaceapp{
+        height: 180px;
+        width: 220px;
+        margin: 30px;
+    }
+
+    p, .mylist, td, th{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    #video{
+        border: none;
+        background-color: white;
+    }
+
+    .images{
+        float: none;
+    }
+
+    .galerie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        float: none;
+        background-color: white; 
+    }
+
+    tbody{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .mylist{
+        list-style-type: circle;
+        background-color: white;
+        margin-left: 50px;
+    }
+
+    ol{
+        background-color: white; 
+    }
+
+    #catego{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25%;
+    }
+
+    #descrip{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo{
+        margin: 10px;
+    }
+
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
-    .ancresbout{
+
+    .buttonsts{
+        width: 150px;
+        font-size: 19px;
+    }
+
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center; 
+        margin: 10px;
+    }
+    
+    #engrenage{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #interfaceapp{
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+        animation: img2animation 3s;
+    }
+   
+    #engrenage, #interfaceapp{
+        height: 250px;
+        width: 300px;
+        margin: 40px;
+    }
+
+    .galerie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        background-color: skyblue;
+    }
+
+    p, .mylist, td, th{
+        font-size: 14px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    main{
+        background-color: skyblue;
+        border: 2px solid lightgreen;
+        padding: 10px;
+    }
+
+    main p:nth-child(6){
+        color: skyblue;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    td{
+        color: skyblue;
+    }
+
+    .mylist{
+        list-style-type: disc;
+        background-color: skyblue;
+        margin-left: 50px;
+    }
+
+    ol{
+        background-color: skyblue; 
+    }
+
+    #video{
+        border: double 6px grey;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
-        margin: auto;
-        background-color: lightseagreen;
+        padding: 10px;
+        background-color: rgb(121, 169, 231);
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+
+    @keyframes zoom{
+        0%{
+            transform: scale(1, 1);
+        }
+        50%{
+            transform: scale(1.5, 1.5);
+        }
+        100%{
+            transform: scale(1, 1);
+        }
+    }
+
+    #logo{
+        animation: zoom 5s;
     }
 }
 
-
 @media only screen and (min-width: 1024px) and (max-width: 1440px)/* LAPTOP */{
+   
+    .ancresbout{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        justify-items: center;
+        animation: animbouts 2s infinite linear;
+    }
+
+    a:nth-child(1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    a:nth-child(2){
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    a:nth-child(3){
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    a:nth-child(4){
+        grid-column: 4;
+        grid-row: 4;
+    }
+
+    @keyframes animbouts {
+        0%{
+            transform: translateX(10px)
+        }
+          50%{
+            transform: translateX(-20px)
+          }
+          100%{
+            transform: translateX(8px)
+          }
+    }
+
+    #engrenage, #interfaceapp{
+        height: 260px;
+        width: 350px;
+        margin: 30px;
+    }
+
+    p, .mylist, td, th{
+        font-size: 15px;
+    }
+
+    .galerie, ol, .mylist{
+        background-color: white;
+    }
+
+    .imgss{
+        width: 280px;
+        height: 150px;
+    }
+
+    .galerie{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    h1, .ancresbout, body, header{
+        background-color: azure;
+    }
+
+    header:first-child{
+        color: azure;
+    }
+
+    #video{
+        border: none;
+        background-color: white;
+    }
+
+    .images{
+        float: right;
+    }
+
+@keyframes move{
+  0%{
+    transform: translateY(0px)
+}
+  50%{
+    transform: translateY(-550px)
+  }
+  100%{
+    transform: translateY(0px)
+  }
+  }
+
+#bouthaut{
+    animation: move 60s infinite linear;
+}
 
 }

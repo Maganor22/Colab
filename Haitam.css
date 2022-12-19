@@ -79,7 +79,11 @@ h3 {
     margin-right: 200px; */
     display: grid;
     grid-template-columns: 300px 1fr ;
+<<<<<<< HEAD
     grid-template-rows: 1fr;
+=======
+    grid-template-rows: 1fr ;
+>>>>>>> gilles
 }
 
 /* .JSHistoire > p  {
@@ -161,6 +165,7 @@ strong {
     animation: Anim 0.1s linear infinite alternate ;
 }
 
+<<<<<<< HEAD
 /* RESPONSIVE */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -231,3 +236,5 @@ strong {
 
 
 /* FIN RESPONSIVE */
+=======
+>>>>>>> gilles

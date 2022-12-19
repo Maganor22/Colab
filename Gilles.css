@@ -22,7 +22,16 @@ body {
 main {
     margin: 0 10% 5% 10%;
 }
+<<<<<<< HEAD
 
+=======
+.main2 {
+    border: 2px solid #264de4;
+    background-color: #ebf4ff;
+    border-radius: 10px;
+    padding: 15px;
+}
+>>>>>>> gilles
 .logoimg {
     float: left;
     height: 350px;
@@ -38,19 +47,35 @@ h1 {
     
     
 }
+<<<<<<< HEAD
 button {
+=======
+.lienAncre {
+>>>>>>> gilles
     height: 50px;
     width: 180px;
     border: 2px solid black;
     border-radius: 5px;
     background-image: radial-gradient(circle at center, rgba(217, 255, 0, 0.116), #264de4);
     font-size: 15px;
+<<<<<<< HEAD
+=======
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 6px;
+>>>>>>> gilles
 }
 
  a  {
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> gilles
 }
 
 h2 {
@@ -71,12 +96,24 @@ p {
     font-size: 16px;
     margin:10px 10px 10px 10px ;
     line-height: 1.5;
+<<<<<<< HEAD
 }
 .contenaire {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
     margin-top: 50px;
+=======
+    text-align: justify;
+}
+.contenaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+>>>>>>> gilles
 }
 .retour {
    display: flex;
@@ -92,6 +129,7 @@ p {
     border-radius: 3px;
 }
 iframe {
+<<<<<<< HEAD
     width: 500px;
     height: fit-content;
     border: 2px solid #264de4;
@@ -99,6 +137,16 @@ iframe {
     margin-right: 50px;
     margin-left: 50px;
 }
+=======
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #264de4;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+>>>>>>> gilles
 @keyframes rotation {
     from{
         transform:rotate(0);
@@ -110,7 +158,11 @@ iframe {
         transform:rotate(-10deg);
     }
 }
+<<<<<<< HEAD
 button:hover {
+=======
+.lienAncre:hover {
+>>>>>>> gilles
     animation: rotation
      0.2s 
      linear 
@@ -157,3 +209,11 @@ margin-left: 5%;
     height: 36px;
     width: 26px;
 }
+<<<<<<< HEAD
+=======
+@media screen and (min-width: 1650px){
+.resp-iframeDeux {
+    margin-left: 20px; 
+}    
+}
+>>>>>>> gilles
